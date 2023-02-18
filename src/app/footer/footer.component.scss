@@ -1,0 +1,29 @@
+.footer {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #cedef1;
+    opacity: 0.5;
+    color: #333;
+}
+
+.footer a {
+    color: #333;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+.footer p {
+    font-size: 1.25rem;
+}
+
+.social {
+    font-size: 1.25rem;
+}
