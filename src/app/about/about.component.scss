@@ -68,3 +68,13 @@ img {
     color: #333;
     overflow: hidden;
 }
+
+.university-card img:hover {
+    animation: spin 4s linear infinite;
+    
+    @keyframes spin {
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+}
