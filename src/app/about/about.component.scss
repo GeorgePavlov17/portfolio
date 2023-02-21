@@ -78,3 +78,22 @@ img {
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin-top: 24px;
+    }
+
+    .container > h2 {
+        font-size: 24px;
+    }
+
+    .university {
+        flex-direction: column;
+        margin: 35px;
+    }
+
+    .university-card {
+
+    }
+}
