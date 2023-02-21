@@ -27,3 +27,21 @@
 .social {
     font-size: 1.25rem;
 }
+
+//Smartphones
+@media screen and (max-width: 500px) {
+    .footer {
+        padding: 0;
+    }
+
+    .social {
+        padding-top: 5px;
+    }
+
+    .social > p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 8px;
+    }
+}
