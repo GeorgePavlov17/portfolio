@@ -89,3 +89,30 @@ i {
         opacity: 0.5;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .heading {
+        margin: 25px;
+    }
+
+    .heading > h2 {
+        font-size: 32px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 255px;
+    }
+
+    .img > img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .img > a {
+        font-size: 30px;
+    }
+}
