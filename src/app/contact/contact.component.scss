@@ -118,3 +118,59 @@ i {
     font-size: 24px;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .contact-header {
+        margin-top: 24px;
+    }
+
+    .contact-header > h2 {
+        font-size: 32px;
+    }
+
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 32px;
+        width: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin: 12px;
+    }
+
+    .card > a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .card > i {
+        font-size: 20px;
+    }
+
+    .input-box {
+        margin-top: 0;
+        margin-bottom: 133px;
+        padding: 0;
+    }
+
+    .contact-input {
+        width: 150%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
