@@ -99,3 +99,48 @@ img {
     color: blue;
     opacity: 0.5;
 }
+
+@media screen and (max-width: 500px) {
+
+    .heading {
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
+
+    .heading > h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .skills-container {
+        margin: 12px;
+    }
+
+    .experience-container {
+        margin: 12px;
+    }
+
+    .skill-card {
+        margin: 12px;
+    }
+
+    .year > h4 {
+        font-size: 24px;
+    }
+
+    .year > p {
+        font-size: 16px;
+    }
+
+    .company {
+        font-size: 20px;
+    }
+
+    .section {
+        margin: 25px;
+    }
+}
