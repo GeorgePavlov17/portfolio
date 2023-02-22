@@ -15,8 +15,19 @@
         white-space: nowrap;
     }
     
-    .navbar h1:hover {
-        color: blue;
+    h1 {
+        &:hover {
+            color: blue;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        &:hover {
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+        }
     }
     
     ul {
@@ -29,16 +40,15 @@
         li > a {
             margin: 0;
             padding: 8px 16px;
-            border-bottom: 2px solid transparent;
             text-decoration: none;
             white-space: nowrap;
             color: #333;
             font-weight: bold;
+
+            &:hover {
+                border-bottom: blue 2px solid;
+            }
         }
-    }
-    
-    .navbar a:hover {
-       color: blue;
     }
 }
 
