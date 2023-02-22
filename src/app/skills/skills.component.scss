@@ -100,6 +100,35 @@ img {
     opacity: 0.5;
 }
 
+//Tablets
+@media screen and (max-width: 800px) {
+    .heading > h2 {
+        font-size: 32px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .experience-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        margin: 24px;
+    }
+}
+
+//Smartphones
 @media screen and (max-width: 500px) {
 
     .heading {
