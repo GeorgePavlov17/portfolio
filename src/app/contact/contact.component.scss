@@ -123,6 +123,39 @@ i {
     margin-right: 10px;
 }
 
+//Tablets
+@media screen and (max-width: 800px) {
+
+    .contact-header {
+        margin-top: 48px;
+    }
+
+    .contact-header > h2 {
+        font-size: 32px;
+    }
+
+    .contact-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    textarea {
+        width: 60%;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+//Smartphones
 @media screen and (max-width: 500px) {
     .container {
         flex-wrap: nowrap;
