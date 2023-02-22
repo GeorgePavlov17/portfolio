@@ -99,6 +99,25 @@ p {
     padding-right: 15px;
 }
 
+//Tablets
+@media screen and (max-width: 800px) {
+    .container {
+        margin-top: 78px;
+        margin-bottom: 145px;
+    }
+
+    img {
+        width: 310px;
+        height: 310px;
+        margin: 10px;
+    }
+
+    .personal-info {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
 //Smartphones
 @media screen and (max-width: 500px) {
     .navbar {
@@ -126,7 +145,7 @@ p {
         flex-direction: column;
         width: 100%;
         margin-top: 2px;
-        margin-bottom: 35px;
+        margin-bottom: 120px;
     }
     
     .photo {
