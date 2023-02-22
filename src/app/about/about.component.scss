@@ -79,6 +79,22 @@ img {
     }
 }
 
+//Tablets and smaller
+@media screen and (max-width: 800px) {
+    .container {
+        margin-top: 24px;
+    }
+
+    .container > h2 {
+        font-size: 32px;
+    }
+
+    .university {
+        flex-direction: column;
+    }
+}
+
+//Smartphones
 @media screen and (max-width: 500px) {
     .container {
         margin-top: 24px;
