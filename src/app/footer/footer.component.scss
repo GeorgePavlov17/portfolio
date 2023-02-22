@@ -28,9 +28,14 @@
     font-size: 1.25rem;
 }
 
+
+
 //Smartphones
 @media screen and (max-width: 500px) {
     .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0;
     }
 
