@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    // margin-top: 48px;
-    margin-bottom: 28px;
+    margin-top: 50px;
+    margin-bottom: 98px;
 
     // @media screen and (max-width: 768px) {
     //     width: 100%;
@@ -13,10 +13,8 @@
 
 img {
     object-fit: contain;
-    width: 30%;
-    height: 90%;
-    // width: 550px;
-    // height: 550px;
+    width: 550px;
+    height: 550px;
     border-radius: 50%;
     margin: 24px;
     cursor: pointer;
@@ -33,12 +31,6 @@ img {
     justify-content: center;
     position: relative;
 }
-
-// .photo > img {
-//     width: 35%;
-//     height: 90%;
-//     border-radius: 50%;
-// }
 
 .techniques {
     display: flex;
@@ -107,6 +99,7 @@ p {
     padding-right: 15px;
 }
 
+//Smartphones
 @media screen and (max-width: 500px) {
     .navbar {
         display: flex;
@@ -132,6 +125,8 @@ p {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-top: 2px;
+        margin-bottom: 35px;
     }
     
     .photo {
