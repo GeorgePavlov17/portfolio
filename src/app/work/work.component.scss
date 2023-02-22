@@ -62,9 +62,9 @@ img {
     border-radius: 10px;
     object-fit: cover;
 
-    &:hover {
+    // &:hover {
 
-    }
+    // }
 }
 
 h4 {
@@ -90,6 +90,22 @@ i {
     }
 }
 
+//Tablets
+@media screen and (max-width: 800px) {
+    .container {
+        margin-top: 24px;
+    }
+
+    .heading > h2 {
+        font-size: 32px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}
+
+//Smartphones
 @media screen and (max-width: 500px) {
     .heading {
         margin: 24px;
