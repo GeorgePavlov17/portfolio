@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 98px;
+    // margin-top: 50px;
+    // margin-bottom: 98px;
 
     // @media screen and (max-width: 768px) {
     //     width: 100%;
@@ -13,8 +13,8 @@
 
 img {
     object-fit: contain;
-    width: 550px;
-    height: 550px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     margin: 24px;
     cursor: pointer;
@@ -36,6 +36,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+}
+
+#first-span {
+    margin-top: 50px;
 }
 
 .technique1 {
@@ -84,12 +89,12 @@ img {
     color: #fff;
     border-radius: 25px;
     margin: 8px;
+    box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
     cursor: pointer;
 
     &:hover {
         color: blue;
         opacity: 0.5;
-        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
         background: #fff;
     }
 }
