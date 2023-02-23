@@ -51,6 +51,14 @@
     justify-content: center;
     text-align: center;
     cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+    }
+}
+
+.card > a {
+    color: #333;
 }
 
 .card a {
@@ -121,6 +129,16 @@ button {
 i {
     font-size: 24px;
     margin-right: 10px;
+}
+
+@media screen and(max-width: 1200px) {
+    .contact-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 35%;
+    }
 }
 
 //Tablets
@@ -205,9 +223,9 @@ i {
         padding: 0;
     }
 
-    .contact-input {
-        width: 150%;
-    }
+    // .contact-input {
+    //     // width: 150%;
+    // }
 
     button {
         width: 40%;
