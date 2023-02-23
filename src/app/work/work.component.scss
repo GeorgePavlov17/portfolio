@@ -90,6 +90,13 @@ i {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 //Tablets
 @media screen and (max-width: 800px) {
     .container {
