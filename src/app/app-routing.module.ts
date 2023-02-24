@@ -31,7 +31,11 @@ const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent
-  }
+  },
+   { 
+    path: '**', 
+    component: HomeComponent 
+  },
 ];
 
 @NgModule({
