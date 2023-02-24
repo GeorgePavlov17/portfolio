@@ -9,7 +9,6 @@
 
     .heading { 
         padding: 8px;
-        // margin: 12px;
         font-weight: bold;
         cursor: pointer;
         color: #333;
@@ -40,7 +39,7 @@
     
         li > a {
             margin: 0;
-            padding: 8px 16px;
+            padding: 6px 12px;
             text-decoration: none;
             white-space: nowrap;
             color: #333;
@@ -49,12 +48,12 @@
             &:hover {
                 border-bottom: blue 2px solid;
             }
-
-            &:active {
-                border-bottom: blue 2px solid;
-            }
         }
     }
+}
+
+.selected-page {
+    border-bottom: blue 2px solid;
 }
 
 //Tablets and smaller
