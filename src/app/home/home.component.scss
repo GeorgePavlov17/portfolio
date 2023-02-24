@@ -24,12 +24,17 @@ img {
     }
 }
 
-.photo {
+#my-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
     position: relative;
+
+    &:hover {
+        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+    }
 }
 
 .techniques {
@@ -41,23 +46,78 @@ img {
 
 #first-span {
     margin-top: 50px;
+    animation: changeColor 1s;
+
+    @keyframes changeColor {
+        from {background: #333; color: #fff;}
+        to {background: #fff; color: blue;}
+    }
+}
+
+#second-span {
+    animation: changeColor 2s;
+
+    @keyframes changeColor {
+        from {background: #333; color: #fff;}
+        to {background: #fff; color: blue;}
+    }
+}
+
+#third-span {
+    animation: changeColor 4s;
+
+    @keyframes changeColor {
+        from {background: #333; color: #fff;}
+        to {background: #fff; color: blue;}
+    }
+}
+
+#fourth-span {
+    animation: changeColor 6s;
+
+    @keyframes changeColor {
+        from {background: #333; color: #fff;}
+        to {background: #fff; color: blue;}
+    }
 }
 
 .technique1 {
     margin-right: 70px;
     display: flex;
     align-items: center;
+    animation: rotate 4s ;
+
+    @keyframes rotate {
+        100% {
+          transform: rotate3d(0, 1, 0, 390deg); /* 405 = 360 + 45 */
+        }
+    }
 }
+
 
 .technique2 {
     margin-left: 70px;
     display: flex;
     align-items: center;
+    animation: rotate 2s ;
+
+    @keyframes rotate {
+        100% {
+          transform: rotate3d(0, 1, 0, 390deg); /* 405 = 360 + 45 */
+        }
+    }
 }
 
 .technique3 {
     display: flex;
     align-items: center;
+    animation: rotate 2s ;
+
+    @keyframes rotate {
+        100% {
+          transform: rotate3d(0, 1, 0, 390deg); /* 405 = 360 + 45 */
+        }
+    }
 }
 
 .technique1 > img {
@@ -163,7 +223,7 @@ p {
         flex-direction: column;
         width: 100%;
         margin-top: 2px;
-        margin-bottom: 120px;
+        margin-bottom: 8px;
     }
     
     .photo {
@@ -255,6 +315,10 @@ p {
 
     p {
         margin: 5px;
+    }
+
+    #first-span {
+        margin-top: 4px;
     }
     
 }
