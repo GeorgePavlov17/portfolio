@@ -8,7 +8,8 @@
     z-index: 100;
 
     .heading { 
-        padding: 0 32px;
+        padding: 8px;
+        // margin: 12px;
         font-weight: bold;
         cursor: pointer;
         color: #333;
@@ -83,6 +84,10 @@
 
     p {
         margin: 5px;
+    }
+
+    h1 {
+        padding: 8px;
     }
 
     .links > ul {
