@@ -52,6 +52,42 @@
     }
 }
 
+.links {
+  .language-options-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 1rem;
+
+            .language-button {
+                width: 1rem;
+                height: 1.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                padding: 0; 
+
+                img {
+                    max-width: 3.3rem; 
+                    max-height: 3.3rem;
+                }
+
+                &:first-child{
+                    margin-right: 1rem;
+                }
+            } 
+
+            .button-clicked {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: blue;
+            }
+        }
+    }
+
 .selected-page {
     border-bottom: blue 2px solid;
 }
@@ -74,6 +110,12 @@
     .links {
         padding: 0;
         font-size: 15px;
+
+        .language-options-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     .heading {

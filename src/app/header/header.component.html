@@ -1,13 +1,48 @@
 <div class="navbar">
-    <h1 class="heading" [routerLink]="'/home'"><i class="fa fa-terminal"></i> Georgi</h1>
+  <h1 class="heading" [routerLink]="'/home'">
+    <i class="fa fa-terminal"></i> {{ "header.header" | translate }}
+  </h1>
 
-    <div class="links">
-        <ul>
-            <li><a [routerLink]="'/home'" [routerLinkActive]="['selected-page']">Home</a></li>
-            <li><a [routerLink]="'/about'" [routerLinkActive]="['selected-page']">About</a></li>
-            <li><a [routerLink]="'/work'" [routerLinkActive]="['selected-page']">Work</a></li>
-            <li><a [routerLink]="'/skills'" [routerLinkActive]="['selected-page']">Skills</a></li>
-            <li><a [routerLink]="'/contact'" [routerLinkActive]="['selected-page']">Contact</a></li>
-        </ul>
+  <div class="links">
+    <div class="language-options-container">
+      <button class="language-button" (click)="setLanguage('en')">
+        <span [class.button-clicked]="isEnglish">{{
+          "lang.en" | translate
+        }}</span>
+      </button>
+      <button class="language-button" (click)="setLanguage('de')">
+        <span [class.button-clicked]="!isEnglish">{{
+          "lang.de" | translate
+        }}</span>
+      </button>
     </div>
+
+    <ul>
+      <li>
+        <a [routerLink]="'/home'" [routerLinkActive]="['selected-page']">{{
+          "header.tabOne" | translate
+        }}</a>
+      </li>
+      <li>
+        <a [routerLink]="'/about'" [routerLinkActive]="['selected-page']">{{
+          "header.tabTwo" | translate
+        }}</a>
+      </li>
+      <li>
+        <a [routerLink]="'/work'" [routerLinkActive]="['selected-page']">{{
+          "header.tabThree" | translate
+        }}</a>
+      </li>
+      <li>
+        <a [routerLink]="'/skills'" [routerLinkActive]="['selected-page']">{{
+          "header.tabFour" | translate
+        }}</a>
+      </li>
+      <li>
+        <a [routerLink]="'/contact'" [routerLinkActive]="['selected-page']">{{
+          "header.tabFive" | translate
+        }}</a>
+      </li>
+    </ul>
+  </div>
 </div>

@@ -1,0 +1,62 @@
+{
+    "skills": {
+        "header": "Skills and Experience",
+        "technologyOne": "JavaScript",
+        "technologyTwo": "TypeScript",
+        "technologyThree": "HTML",
+        "technologyFour": "CSS",
+        "technologyFive": "Angular",
+        "technologySix": "Ionic",
+        "technologySeven": "Sass",
+        "technologyEight": "Git",
+        "periodOne": "June 2022",
+        "periodTwo": "April 2022",
+        "seniorityOne": "Junior Front-End Developer",
+        "seniorityTwo": "Intern Front-End Developer",
+        "companyNameOne": "billiton internet services Gmbh"
+    },
+    "about": {
+        "header": "Education and courses",
+        "universityNameOne": "Technical University Sofia",
+        "universityNameTwo": "Software University",
+        "universityNameThree": "Udemy",
+        "universitySpecialtyOne": "Industrial Management - 'Engineer - Manager'",
+        "universitySpecialtyTwo": "Learning JavaScript from the basics to the advanced JS practices.",
+        "universitySpecialtyThree": "Going through different courses - JavaScript, Typescript, HTML & CSS, Angular"
+    },
+    "contact": {
+        "header": "Contact Me"
+    },
+    "header": {
+        "header": "Georgi",
+        "tabOne": "Home",
+        "tabTwo": "About",
+        "tabThree": "Work",
+        "tabFour": "Skills",
+        "tabFive": "Contact"
+    },
+    "home": {
+        "header": "Hi !",
+        "name": "My name is Georgi",
+        "am": "I am ",
+        "developer": "Front End Developer"  
+    },
+    "work": {
+        "header": " My projects",
+        "name": "My name is Georgi",
+        "am": "I am ",
+        "developer": "Front End Developer",
+        "appOne": "Task app",
+        "appTwo": "Weather app",
+        "appThree": "E-commerce app",
+        "appFour": "Movie app",
+        "appOneInfo": "Task app in which you can write your notes.",
+        "appTwoInfo": "Weather app getting data from API.",
+        "appThreeInfo": "E-commerce app for online shopping.",
+        "appFourInfo": "Movie app in which you can browse and search movies."
+    },
+    "lang": {
+        "en": "en",
+        "de": "de"
+    }
+}

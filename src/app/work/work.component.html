@@ -1,54 +1,61 @@
 <app-header></app-header>
 
 <div class="container">
+  <div class="heading">
+    <h2><i class="fa fa-cogs"></i>{{ "work.header" | translate }}</h2>
+  </div>
 
-    <div class="heading">
-        <h2><i class="fa fa-cogs"></i> My projects</h2>
+  <div class="projects">
+    <div class="card">
+      <div class="img">
+        <img src="../../assets/images/projects/taskapp.jpg" />
+        <a href="https://github.com/GeorgePavlov17/task-app"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+        <!-- <div class="shader"></div> -->
+      </div>
+      <div class="info">
+        <h4>{{ "work.appOne" | translate }}</h4>
+        <p>{{ "work.appOneInfo" | translate }}</p>
+      </div>
     </div>
-
-    <div class="projects">
-        <div class="card">
-            <div class="img">
-                <img src="../../assets/images/projects/taskapp.jpg">
-                <a href="https://github.com/GeorgePavlov17/task-app"><i class="fa fa-github fa-2x"></i></a>
-                <!-- <div class="shader"></div> -->
-            </div>
-            <div class="info">
-                <h4>Task app</h4>
-                <p>Task app in which you can write your notes.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="../../assets/images/projects/weatherapp.jpg">
-                <a href="https://github.com/GeorgePavlov17/weather-app"><i class="fa fa-github fa-2x"></i></a>
-            </div>
-            <div class="info">
-                <h4>Weather app</h4>
-                <p>Weather app getting data from API.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="../../assets/images/projects/ecommerce.jpg">
-                <a href="https://github.com/GeorgePavlov17/ecommerce-app"><i class="fa fa-github fa-2x"></i></a>
-            </div>
-            <div class="info">
-                <h4>E-commerce app</h4>
-                <p>E-commerce app for online shopping.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img">
-                <img src="../../assets/images/projects/movieapp.jpg">
-                <a href="https://github.com/GeorgePavlov17/movie-app"><i class="fa fa-github fa-2x"></i></a>
-            </div>
-            <div class="info">
-                <h4>Movie app</h4>
-                <p>Movie app in which you can browse and search movies.</p>
-            </div>
-        </div>
+    <div class="card">
+      <div class="img">
+        <img src="../../assets/images/projects/weatherapp.jpg" />
+        <a href="https://github.com/GeorgePavlov17/weather-app"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+      </div>
+      <div class="info">
+        <h4>{{ "work.appTwo" | translate }}</h4>
+        <p>{{ "work.appTwoInfo" | translate }}</p>
+      </div>
     </div>
+    <div class="card">
+      <div class="img">
+        <img src="../../assets/images/projects/ecommerce.jpg" />
+        <a href="https://github.com/GeorgePavlov17/ecommerce-app"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+      </div>
+      <div class="info">
+        <h4>{{ "work.appThree" | translate }}</h4>
+        <p>{{ "work.appThreeInfo" | translate }}</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="../../assets/images/projects/movieapp.jpg" />
+        <a href="https://github.com/GeorgePavlov17/movie-app"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+      </div>
+      <div class="info">
+        <h4>{{ "work.appFour" | translate }}</h4>
+        <p>{{ "work.appFourInfo" | translate }}</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>

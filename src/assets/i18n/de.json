@@ -1,0 +1,62 @@
+{
+    "skills": {
+        "header": "Fähigkeiten und Erfahrung",
+        "technologyOne": "JavaScript",
+        "technologyTwo": "TypeScript",
+        "technologyThree": "HTML",
+        "technologyFour": "CSS",
+        "technologyFive": "Angular",
+        "technologySix": "Ionic",
+        "technologySeven": "Sass",
+        "technologyEight": "Git",
+        "periodOne": "Juni 2022",
+        "periodTwo": "April 2022",
+        "seniorityOne": "Junior-Frontend-Entwickler",
+        "seniorityTwo": "Praktikant Frontend-Entwickler",
+        "companyNameOne": "billiton internet services Gmbh"
+    },
+    "about": {
+        "header": "Ausbildung und Kurse",
+        "universityNameOne": "Technische Universität Sofia",
+        "universityNameTwo": "Software-Universität",
+        "universityNameThree": "Udemy",
+        "universitySpecialtyOne": "Industriemanagement – „Ingenieur – Manager“",
+        "universitySpecialtyTwo": "JavaScript von den Grundlagen bis zu fortgeschrittenen JS-Praktiken lernen.",
+        "universitySpecialtyThree": "Verschiedene Kurse absolvieren – JavaScript, Typescript, HTML & CSS, Angular."
+    },
+    "contact": {
+        "header": "Kontaktieren Sie mich"
+    },
+    "header": {
+        "header": "Georgi",
+        "tabOne": "Startseite",
+        "tabTwo": "Über",
+        "tabThree": "Arbeit",
+        "tabFour": "Fähigkeiten",
+        "tabFive": "Kontakt"
+    },
+    "home": {
+        "header": "Hallo !",
+        "name": "Mein Name ist Georgi",
+        "am": "Ich bin ",
+        "developer": "Frontend-Entwickler"  
+    },
+    "work": {
+        "header": " Meine Projekte",
+        "name": "Mein Name ist Georgi",
+        "am": "Ich bin ",
+        "developer": "Frontend-Entwickler",
+        "appOne": "Aufgaben-App",
+        "appTwo": "Wetter-App",
+        "appThree": "E-Commerce-App",
+        "appFour": "Film-App",
+        "appOneInfo": "Aufgaben-App, in der Sie Ihre Notizen schreiben können.",
+        "appTwoInfo": "Wetter-App ruft Daten von API ab.",
+        "appThreeInfo": "E-Commerce-App für Online-Shopping.",
+        "appFourInfo": "Film-App, mit der Sie Filme durchsuchen und finden können."
+    },
+    "lang": {
+        "en": "en",
+        "de": "de"
+    }
+}
