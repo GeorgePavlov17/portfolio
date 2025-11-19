@@ -1,36 +1,36 @@
 <app-header></app-header>
 
-    <div class="container">
-        <div class="about-me">
-            <span class="personal-info" id="first-span">
-                <p>Hi !</p>
-            </span>
-            <span class="personal-info" id="second-span">
-                <p>My name is Georgi</p>
-            </span>
-            <span class="personal-info" id="third-span">
-                <p>I am </p>
-            </span>
-            <span class="personal-info" id="fourth-span">
-                <p>Front End Developer</p>
-            </span>
-        </div>
+<div class="container">
+  <div class="about-me">
+    <span class="personal-info" id="first-span">
+      <p>{{ "home.header" | translate }}</p>
+    </span>
+    <span class="personal-info" id="second-span">
+      <p>{{ "home.name" | translate }}</p>
+    </span>
+    <span class="personal-info" id="third-span">
+      <p>{{ "home.am" | translate }}</p>
+    </span>
+    <span class="personal-info" id="fourth-span">
+      <p>{{ "home.developer" | translate }}</p>
+    </span>
+  </div>
 
-        <div class="photo">
-            <img id="my-img" src="../../assets/images/cv photo.jpg" alt="">
-        </div>
+  <div class="photo">
+    <img id="my-img" src="../../assets/images/cv photo.jpg" alt="" />
+  </div>
 
-        <div class="techniques">
-            <div class="technique1">
-                <img src="../../assets/images/js.png" alt="">
-            </div>
-            <div class="technique2">
-                <img src="../../assets/images/ts.png" alt="">
-            </div>
-            <div class="technique3">
-                <img src="../../assets/images/angular.png" alt="">
-            </div>
-        </div>
+  <div class="techniques">
+    <div class="technique1">
+      <img src="../../assets/images/js.png" alt="" />
     </div>
+    <div class="technique2">
+      <img src="../../assets/images/ts.png" alt="" />
+    </div>
+    <div class="technique3">
+      <img src="../../assets/images/angular.png" alt="" />
+    </div>
+  </div>
+</div>
 
 <app-footer></app-footer>

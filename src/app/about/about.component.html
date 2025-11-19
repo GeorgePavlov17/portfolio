@@ -1,25 +1,25 @@
 <app-header></app-header>
 
 <div class="container">
-    <h2><i class="fa fa-graduation-cap"></i>Education and courses</h2>
+  <h2><i class="fa fa-graduation-cap"></i>{{ "about.header" | translate }}</h2>
 </div>
 
 <div class="university">
-    <div class="university-card">
-        <img src="../../assets/images/tu.png" alt="">
-        <h3>Technical University Sofia - Branch Plovidv</h3>
-        <p>Industrial Management - 'Engineer - Manager'</p>
-    </div>
-    <div class="university-card">
-        <img src="../../assets/images/soft.png" alt="">
-        <h3>Software University</h3>
-        <p>Learning JavaScript from the basics to the advanced JS practices.</p>
-    </div>
-    <div class="university-card">
-        <img src="../../assets/images/udemy.png" alt="">
-        <h3>Udemy</h3>
-        <p>Going through different courses - JavaScript, HTML & CSS, Angular</p>
-    </div>
+  <div class="university-card">
+    <img src="../../assets/images/tu.png" alt="" />
+    <h3>{{ "about.universityNameOne" | translate }}</h3>
+    <p>{{ "about.universitySpecialtyOne" | translate }}</p>
+  </div>
+  <div class="university-card">
+    <img src="../../assets/images/soft.png" alt="" />
+    <h3>{{ "about.universityNameTwo" | translate }}</h3>
+    <p>{{ "about.universitySpecialtyTwo" | translate }}</p>
+  </div>
+  <div class="university-card">
+    <img src="../../assets/images/udemy.png" alt="" />
+    <h3>{{ "about.universityNameThree" | translate }}</h3>
+    <p>{{ "about.universitySpecialtyThree" | translate }}</p>
+  </div>
 </div>
 
 <app-footer></app-footer>
