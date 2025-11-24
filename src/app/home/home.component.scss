@@ -13,14 +13,14 @@
 
 img {
     object-fit: contain;
-    width: 700px;
-    height: 700px;
+    width: 43.75rem;
+    height: 43.75rem;
     border-radius: 50%;
-    margin: 24px;
+    margin: 1.5rem;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+        box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
     }
 }
 
@@ -29,11 +29,11 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0 0.25rem 1.25rem rgb(0 0 0 / 10%);
     position: relative;
 
     &:hover {
-        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+        box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
     }
 }
 
@@ -41,11 +41,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 #first-span {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     animation: changeColor 1s;
 
     @keyframes changeColor {
@@ -82,7 +82,7 @@ img {
 }
 
 .technique1 {
-    margin-right: 70px;
+    margin-right: 4.375rem;
     display: flex;
     align-items: center;
     animation: rotate 2s ;
@@ -96,7 +96,7 @@ img {
 
 
 .technique2 {
-    margin-left: 70px;
+    margin-left: 4.375rem;
     display: flex;
     align-items: center;
     animation: rotate 2s ;
@@ -121,20 +121,20 @@ img {
 }
 
 .technique1 > img {
-    width: 145px;
-    height: 145px;
+    width: 9.0625rem;
+    height: 9.0625rem;
     border-radius: 50%;
 }
 
 .technique2 > img {
-    width: 130px;
-    height: 130px;
+    width: 8.125rem;
+    height: 8.125rem;
     border-radius: 50%;
 }
 
 .technique3 > img {
-    width: 125px;
-    height: 125px;
+    width: 7.8125rem;
+    height: 7.8125rem;
     border-radius: 50%;
 }
 
@@ -142,14 +142,14 @@ img {
     position: relative;
     display: flex;
     width: fit-content;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     background: #333;
     opacity: 0.5;
     color: #fff;
-    border-radius: 25px;
-    margin: 8px;
-    box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+    border-radius: 1.5625rem;
+    margin: 0.5rem;
+    box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
     cursor: pointer;
 
     &:hover {
@@ -160,8 +160,8 @@ img {
 }
 
 p {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -171,28 +171,28 @@ p {
     }
 
     img {
-        width: 550px;
-        height: 550px;
-        margin: 12px;
+        width: 34.375rem;
+        height: 34.375rem;
+        margin: 0.75rem;
     }
 }
 
 //Tablets
 @media screen and (max-width: 800px) {
     .container {
-        margin-top: 78px;
-        margin-bottom: 145px;
+        margin-top: 4.875rem;
+        margin-bottom: 9.0625rem;
     }
 
     img {
-        width: 310px;
-        height: 310px;
-        margin: 10px;
+        width: 19.375rem;
+        height: 19.375rem;
+        margin: 0.625rem;
     }
 
     .personal-info {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -205,25 +205,25 @@ p {
     }
 
     .heading {
-        margin: 5px;
-        font-size: 15px;
+        margin: 0.3125rem;
+        font-size: 0.9375rem;
     }
 
     .heading > h1 {
-        margin: 8px;
-        font-size: 20px;
+        margin: 0.5rem;
+        font-size: 1.25rem;
     }
 
     .links {
-        padding: 2px;
+        padding: 0.125rem;
     }
 
     .container {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 2px;
-        margin-bottom: 8px;
+        margin-top: 0.125rem;
+        margin-bottom: 0.5rem;
     }
     
     .photo {
@@ -231,25 +231,25 @@ p {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 8px;
+        margin: 0.5rem;
     }
 
     .photo > img {
-        width: 170px;
-        height: 170px;
-        margin: 5px;
+        width: 10.625rem;
+        height: 10.625rem;
+        margin: 0.3125rem;
     }
 
     .about-me {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 8px;
+        margin-top: 0.5rem;
     }
 
     .personal-info {
-        margin: 5px;
-        font-size: 20px;
+        margin: 0.3125rem;
+        font-size: 1.25rem;
     }
 
     .techniques {
@@ -261,64 +261,64 @@ p {
     .technique1 {
         display: flex;
         align-items: center;
-        margin-right: 85px;
+        margin-right: 5.3125rem;
     }
 
     .technique2 {
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
 
     .technique3 {
         display: flex;
         align-items: center;
-        margin-right: 50px;
+        margin-right: 3.125rem;
     }
 
     .technique1 > img {
-        width: 130px;
-        height: 130px;
-        margin: 5px;
+        width: 8.125rem;
+        height: 8.125rem;
+        margin: 0.3125rem;
         border-radius: 50%;
     }
 
     .technique2 > img {
-        width: 110px;
-        height: 110px;
-        margin: 5px;
+        width: 6.875rem;
+        height: 6.875rem;
+        margin: 0.3125rem;
         border-radius: 50%;
     }
 
     .technique3 > img {
-        width: 110px;
-        height: 110px;
-        margin: 5px;
+        width: 6.875rem;
+        height: 6.875rem;
+        margin: 0.3125rem;
         border-radius: 50%;
     }
 
     .footer {
-        padding: 2px;
+        padding: 0.125rem;
     }
 
     .footer > p {
-        margin: 5px;
+        margin: 0.3125rem;
     }
 
     .social > a {
-        margin-top: 5px;
+        margin-top: 0.3125rem;
     }
 
     .social > p {
-        margin: 8px;
+        margin: 0.5rem;
     }
 
     p {
-        margin: 5px;
+        margin: 0.3125rem;
     }
 
     #first-span {
-        margin-top: 4px;
+        margin-top: 0.25rem;
     }
     
 }

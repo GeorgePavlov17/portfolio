@@ -19,7 +19,7 @@
     text-align: center;
     color: #333;
     opacity: 0.5;
-    margin-top: 48px;
+    margin-top: 3rem;
 
     &:hover {
         color: blue;
@@ -41,9 +41,9 @@
 
 .card {
     display: flex;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 16px;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 1rem;
     background: blue;
     opacity: 0.5;
     color: #fff;
@@ -53,7 +53,7 @@
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
+        box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
     }
 }
 
@@ -64,7 +64,7 @@
 .card a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .contact-input {
@@ -76,9 +76,9 @@ input {
     border: 1px solid #9f9b9b;
     font-size: 1rem;
     outline: none;
-    padding: 16px;
-    margin: 20px;
-    border-radius: 10px;
+    padding: 1rem;
+    margin: 1.25rem;
+    border-radius: 0.625rem;
     width: 50%;
 }
 
@@ -88,10 +88,10 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     width: 100%;
-    margin-top: 35px;
-    margin-bottom: 117px;
+    margin-top: 2.1875rem;
+    margin-bottom: 7.3125rem;
 }
 
 textarea {
@@ -99,22 +99,22 @@ textarea {
     border: 1px solid #9f9b9b;
     font-size: 1rem;
     outline: none;
-    padding: 16px;
-    border-radius: 10px;
-    margin: 20px;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    margin: 1.25rem;
     width: 50%;
-    height: 100px;
+    height: 6.25rem;
 }
 
 button {
     background-color: #f4f4f4;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     outline: none;
-    padding: 10px;
+    padding: 0.625rem;
     color: blue;
     opacity: 0.5;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
     width: 20%;
 
@@ -127,8 +127,8 @@ button {
 }
 
 i {
-    font-size: 24px;
-    margin-right: 10px;
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -145,15 +145,15 @@ i {
 @media screen and (max-width: 800px) {
 
     .contact-header {
-        margin-top: 48px;
+        margin-top: 3rem;
     }
 
     .contact-header > h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .contact-cards {
-        margin-top: 32px;
+        margin-top: 2rem;
         flex-direction: column;
     }
 
@@ -178,15 +178,15 @@ i {
 @media screen and (max-width: 500px) {
     .container {
         flex-wrap: nowrap;
-        margin-bottom: 120px;
+        margin-bottom: 7.5rem;
     }
 
     .contact-header {
-        margin-top: 24px;
+        margin-top: 1.5rem;
     }
 
     .contact-header > h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .contact-cards {
@@ -196,13 +196,13 @@ i {
         justify-content: center;
         text-align: center;
         margin: 0;
-        padding: 32px;
+        padding: 2rem;
         width: auto;
     }
 
     .card {
         width: 100%;
-        margin: 12px;
+        margin: 0.75rem;
     }
 
     .card > a {
@@ -210,16 +210,16 @@ i {
         text-align: center;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .card > i {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .input-box {
         margin-top: 0;
-        margin-bottom: 133px;
+        margin-bottom: 8.3125rem;
         padding: 0;
     }
 

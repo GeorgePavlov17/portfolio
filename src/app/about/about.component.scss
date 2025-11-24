@@ -6,7 +6,7 @@
 
 .container {
     display: flex;
-    margin-top: 48px;
+    margin-top: 3rem;
     flex-direction: row;
     width: 100%;
     align-items: center;
@@ -29,18 +29,18 @@ h2 {
 h3 {
     display: block;
     font-weight: bold;
-    font-size: 20px;
-    margin: 16px;
+    font-size: 1.25rem;
+    margin: 1rem;
     color: #333;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 i {
     opacity: 0.5;
-    margin: 16px;
+    margin: 1rem;
 }
 
 .university {
@@ -49,22 +49,22 @@ i {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 136px;
+    margin: 8.5rem;
 }
 
 img {
-    height: 140px;
-    margin-bottom: 24px;
+    height: 8.75rem;
+    margin-bottom: 1.5rem;
 }
 
 .university-card {
     position: relative;
     display: inline-block;
-    width: 250px;
-    margin: 24px;
+    width: 15.625rem;
+    margin: 1.5rem;
     cursor: pointer;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     color: #333;
     overflow: hidden;
 }
@@ -82,15 +82,15 @@ img {
 //Tablets and smaller
 @media screen and (max-width: 800px) {
     .container {
-        margin-top: 24px;
+        margin-top: 1.5rem;
     }
 
     .container > h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .university {
-        margin-top: 32px;
+        margin-top: 2rem;
         flex-direction: column;
     }
 }
@@ -98,15 +98,15 @@ img {
 //Smartphones
 @media screen and (max-width: 500px) {
     .container {
-        margin-top: 24px;
+        margin-top: 1.5rem;
     }
 
     .container > h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .university {
         flex-direction: column;
-        margin: 35px;
+        margin: 2.1875rem;
     }
 }

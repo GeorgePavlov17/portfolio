@@ -8,7 +8,7 @@
     z-index: 100;
 
     .heading { 
-        padding: 8px;
+        padding: 0.5rem;
         font-weight: bold;
         cursor: pointer;
         color: #333;
@@ -25,7 +25,7 @@
 
     a {
         &:hover {
-            border-bottom: 2px solid transparent;
+            border-bottom: 0.125rem solid transparent;
             cursor: pointer;
         }
     }
@@ -35,18 +35,18 @@
         flex-direction: row;
         padding: 0;
         list-style: none;
-        font-size: 20px;
+        font-size: 1.25rem;
     
         li > a {
             margin: 0;
-            padding: 6px 12px;
+            padding: 0.375rem 0.75rem;
             text-decoration: none;
             white-space: nowrap;
             color: #333;
             font-weight: bold;
 
             &:hover {
-                border-bottom: blue 2px solid;
+                border-bottom: blue 0.125rem solid;
             }
         }
     }
@@ -81,16 +81,20 @@
                 }
             } 
 
-            .button-clicked {
+            .button-default { 
                 font-size: 0.8rem;
                 font-weight: 600;
+                color: gray;
+            }
+
+            .button-clicked {
                 color: blue;
             }
         }
     }
 
 .selected-page {
-    border-bottom: blue 2px solid;
+    border-bottom: blue 0.125rem solid;
 }
 
 //Tablets and smaller
@@ -111,7 +115,7 @@
 
     .links {
         padding: 0;
-        font-size: 15px;
+        font-size: 0.9375rem;
 
         .language-options-container {
             display: flex;
@@ -121,16 +125,16 @@
     }
 
     .heading {
-        margin: 5px;
-        font-size: 20px;
+        margin: 0.3125rem;
+        font-size: 1.25rem;
     }
 
     p {
-        margin: 5px;
+        margin: 0.3125rem;
     }
 
     h1 {
-        padding: 8px;
+        padding: 0.5rem;
     }
 
     .links > ul {
@@ -138,8 +142,8 @@
         flex-direction: row;
         padding: 0;
         list-style: none;
-        margin: 8px;
-        font-size: 15px;
+        margin: 0.5rem;
+        font-size: 0.9375rem;
     }
     
 }
