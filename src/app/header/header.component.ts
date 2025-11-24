@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -16,19 +16,19 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     ]
 })
 export class HeaderComponent implements OnInit { 
-  selectedLanguage!: string | null;
-  isEnglish!: boolean;
+  selectedLanguage!: string | null; 
+  isSelected!: boolean;
 
   constructor( private translate: TranslateService ) { }
 
   ngOnInit(): void {
      this.checkLanguage();
-  }
+  }   
 
-  setLanguage(language: string) { 
-    this.isEnglish = !this.isEnglish;
+  setLanguage(language: string ) {  
+    this.isSelected = !this.isSelected;
     const lang = language == 'en' ? 'en' : 'de';
-    language === 'en' ? this.isEnglish = true : this.isEnglish = false;
+    language === 'en' ? this.isSelected = true : this.isSelected = false;
 
     this.selectedLanguage !== null ? lang == this.selectedLanguage : lang; 
 
@@ -38,8 +38,10 @@ export class HeaderComponent implements OnInit {
   }
 
   checkLanguage() {
-    ( this.selectedLanguage !== null && this.selectedLanguage == 'en' ) ? this.isEnglish = true : this.isEnglish = false;
-    this.selectedLanguage = localStorage.getItem('selectedLanguage');  
+    this.selectedLanguage = localStorage.getItem('selectedLanguage');   
+
+    this.isSelected = ( this.selectedLanguage !== null && this.selectedLanguage == 'en' ) ? this.isSelected = true : this.isSelected = false;  
+
     this.selectedLanguage !== null ? this.translate.use( this.selectedLanguage ) : this.translate.use( 'en' ); 
   }
 }

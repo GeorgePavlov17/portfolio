@@ -1,10 +1,11 @@
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    bottom: 0;
-    display: block;
+    bottom: 0; 
     width: 100%;
-    padding: 16px 0;
-    text-align: center;
+    padding: 1rem 0; 
     background: #cedef1;
     opacity: 0.5;
     color: #333;
@@ -31,10 +32,17 @@
     font-size: 1.25rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .footer { 
+    position: relative;
+    } 
+}
+
 //Smartphones
 @media screen and (max-width: 500px) {
     .footer {
         display: flex;
+        position: absolute;
         justify-content: center;
         align-items: center;
         padding: 0;

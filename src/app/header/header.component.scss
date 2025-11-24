@@ -81,9 +81,13 @@
                 }
             } 
 
-            .button-clicked {
+            .button-default { 
                 font-size: 0.8rem;
                 font-weight: 600;
+                color: gray;
+            }
+
+            .button-clicked {
                 color: blue;
             }
         }
