@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
   setLanguage(language: string ) {  
     this.isSelected = !this.isSelected;
     const lang = language == 'en' ? 'en' : 'de';
-    language === 'en' ? this.isSelected = true : this.isSelected = false;
+     language === 'en' ? this.isSelected = true : this.isSelected = false;
 
     this.selectedLanguage !== null ? lang == this.selectedLanguage : lang; 
 
@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
   checkLanguage() {
     this.selectedLanguage = localStorage.getItem('selectedLanguage');   
 
-    this.isSelected = ( this.selectedLanguage !== null && this.selectedLanguage == 'en' ) ? this.isSelected = true : this.isSelected = false;  
+    this.isSelected = ( (this.selectedLanguage !== null && this.selectedLanguage == 'en' ) || this.selectedLanguage == undefined) ? this.isSelected = true : this.isSelected = false; 
 
     this.selectedLanguage !== null ? this.translate.use( this.selectedLanguage ) : this.translate.use( 'en' ); 
   }
