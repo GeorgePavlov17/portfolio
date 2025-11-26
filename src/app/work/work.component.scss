@@ -1,3 +1,5 @@
+@use "src/variables.scss" as *;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,14 +24,8 @@ h2 {
     display: block;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
-    opacity: 0.5;
-}
-
-h2:hover {
-    cursor: pointer;
-    color: blue;
-}
+    color: $color-primary-dark-text; 
+} 
 
 .projects {
     display: flex;
@@ -43,8 +39,8 @@ h2:hover {
 .card {
     display: flex;
     flex-direction: column;
-    background: #cedef1;
-    color: #fff;
+    background: $color-primary-dark-text;
+    color: $color-primary-text;
     cursor: pointer;
     border-radius: 0.625rem;
     margin: 1.25rem;
@@ -82,11 +78,10 @@ h4 {
 }
 
 i {
-    color: #333;
+    color: $color-primary-dark-text;
 
     &:hover {
-        color: blue;
-        opacity: 0.5;
+        color: $color-primary-contrast; 
     }
 }
 

@@ -1,3 +1,5 @@
+@use "src/variables.scss" as *;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,15 +19,8 @@
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    color: #333;
-    opacity: 0.5;
-    margin-top: 3rem;
-
-    &:hover {
-        color: blue;
-        opacity: 0.5;
-        cursor: pointer;
-    }
+    color: $color-primary-dark-text; 
+    margin-top: 3rem; 
 }
 
 .contact-header > h2 {
@@ -44,10 +39,8 @@
     margin: 1.25rem;
     padding: 1.25rem;
     border-radius: 1rem;
-    background: blue;
-    opacity: 0.5;
-    color: #fff;
-    width: 20%;
+    background: $color-primary-contrast; 
+    color: #fff; 
     justify-content: center;
     text-align: center;
     cursor: pointer;
@@ -58,7 +51,7 @@
 }
 
 .card > a {
-    color: #333;
+    color: $color-primary-dark-text;
 }
 
 .card a {
@@ -112,15 +105,13 @@ button {
     font-size: 1.5rem;
     outline: none;
     padding: 0.625rem;
-    color: blue;
-    opacity: 0.5;
+    color: $color-primary-contrast; 
     border-radius: 0.625rem;
     cursor: pointer;
     width: 20%;
 
     &:hover {
-        background: blue;
-        opacity: 0.5;
+        background: $color-primary-contrast; 
         color: #fff;
         cursor: pointer; 
     }

@@ -11,9 +11,7 @@ import { FooterComponent } from '../footer/footer.component';
     standalone: true,
     imports: [
       CommonModule,
-      TranslateModule,
-      HeaderComponent,
-      FooterComponent
+      TranslateModule 
     ]
 })
 export class SkillsComponent implements OnInit {
