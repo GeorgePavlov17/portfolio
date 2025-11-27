@@ -39,7 +39,13 @@
         "header": "Hallo !",
         "name": "Mein Name ist Georgi",
         "am": "Ich bin ",
-        "developer": "Frontend-Entwickler"  
+        "developer": "Software-Entwickler",
+        "const": "const",
+        "me": "me",
+        "myself": "ich selbst",
+        "greet": "begrüßen",
+        "keyName": "Name",
+        "role": "Rolle"
     },
     "work": {
         "header": " Meine Projekte",
