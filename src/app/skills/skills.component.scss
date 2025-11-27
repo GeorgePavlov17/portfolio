@@ -12,10 +12,31 @@
 
 .container {
     display: flex;
-    flex-direction: row;
-    margin-top: 1.5rem;
-    margin-bottom: 10.125rem;
-    // width: 50%;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+
+    .skills-container {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+    .chart {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 50%;
+        height: 50vh;
+
+        .chart-element {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
 h2 {
@@ -42,14 +63,7 @@ p {
     }
 }
 
-.skills-container {
-    display: flex;
-    align-items: center;
-    margin: 1.5rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 50%;
-}
+
 
 .experience-container {
     display: flex;
