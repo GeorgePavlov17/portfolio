@@ -1,23 +1,26 @@
+@use "src/variables.scss" as *;
+
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    // margin-top: 50px;
-    // margin-bottom: 98px;
+    justify-content: space-around; 
+    background: $color-primary;
+    height: calc(100vh - 12rem);
 
-    // @media screen and (max-width: 768px) {
-    //     width: 100%;
-    //     margin: 0 0 16px 0;
-    // }
+    .about-me,
+    .photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 img {
-    object-fit: contain;
-    width: 43.75rem;
-    height: 43.75rem;
+    object-fit: cover;
+    width: 26rem;
+    height: 26rem;
     border-radius: 50%;
-    margin: 1.5rem;
-    cursor: pointer;
+    margin: 1.5rem; 
 
     &:hover {
         box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
@@ -25,61 +28,64 @@ img {
 }
 
 #my-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.25rem 1.25rem rgb(0 0 0 / 10%);
-    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // box-shadow: 0 0.25rem 1.25rem rgb(0 0 0 / 10%);
+    // position: relative;
+        box-shadow: 0 0.3125rem 0.625rem rgba(57, 175, 221, 0.4);
+        box-shadow: 0 0.3125rem 0.625rem rgba(95 221 57 / 40%);
 
     &:hover {
-        box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
+        box-shadow: 0 0.3125rem 0.625rem rgba(57, 175, 221, 0.4);
+        // box-shadow: 0 0.125rem 0.25rem rgba(57, 175, 221, 0.4);
     }
 }
 
 .techniques {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 3.125rem;
+    justify-content: center;
+    align-items: center; 
 }
 
-#first-span {
-    margin-top: 3.125rem;
-    animation: changeColor 1s;
+// #first-span {
+//     margin-top: 3.125rem;
+//     animation: changeColor 1s;
 
-    @keyframes changeColor {
-        from {background: #333; color: #fff;}
-        to {background: #fff; color: blue;}
-    }
-}
+//     @keyframes changeColor {
+//         from {background: $color-primary-dark-text; color: #fff;}
+//         to {background: #fff; color: $color-primary-contrast;}
+//     }
+// }
 
-#second-span {
-    animation: changeColor 2s;
+// #second-span {
+//     animation: changeColor 2s;
 
-    @keyframes changeColor {
-        from {background: #333; color: #fff;}
-        to {background: #fff; color: blue;}
-    }
-}
+//     @keyframes changeColor {
+//         from {background: $color-primary-dark-text; color: #fff;}
+//         to {background: #fff; color: $color-primary-contrast;}
+//     }
+// }
 
-#third-span {
-    animation: changeColor 4s;
+// #third-span {
+//     animation: changeColor 4s;
 
-    @keyframes changeColor {
-        from {background: #333; color: #fff;}
-        to {background: #fff; color: blue;}
-    }
-}
+//     @keyframes changeColor {
+//         from {background: $color-primary-dark-text; color: #fff;}
+//         to {background: #fff; color: $color-primary-contrast;}
+//     }
+// }
 
-#fourth-span {
-    animation: changeColor 6s;
+// #fourth-span {
+//     animation: changeColor 6s;
 
-    @keyframes changeColor {
-        from {background: #333; color: #fff;}
-        to {background: #fff; color: blue;}
-    }
-}
+//     @keyframes changeColor {
+//         from {background: $color-primary-dark-text; color: #fff;}
+//         to {background: #fff; color: $color-primary-contrast;}
+//     }
+// }
 
 .technique1 {
     margin-right: 4.375rem;
@@ -144,24 +150,40 @@ img {
     width: fit-content;
     font-size: 1.5rem;
     line-height: 2rem;
-    background: #333;
-    opacity: 0.5;
-    color: #fff;
+    // background: $color-primary-dark-text; 
+    color: $color-primary-text;
     border-radius: 1.5625rem;
-    margin: 0.5rem;
-    box-shadow: 0 0.3125rem 0.625rem rgb(5 5 5 / 30%);
-    cursor: pointer;
+    // margin: 0.5rem; 
 
-    &:hover {
-        color: blue;
-        opacity: 0.5;
-        background: #fff;
+    .orange {
+        color: $color-secondary-danger-tint;
+        padding-left: 0;
+    }
+
+    .white {
+        color: $color-primary-text;
+        padding: 0;
+    }
+
+    .yellow {
+        color: $color-secondary-tint;
+        padding-left: 0;
+
+        &:nth-child(1) {
+            margin-top: 0; 
+        }
+    }
+
+    .purple {
+        color: $color-secondary;
+        padding-left: 0;
     }
 }
 
 p {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
@@ -224,6 +246,7 @@ p {
         width: 100%;
         margin-top: 0.125rem;
         margin-bottom: 0.5rem;
+        overflow-y: auto;
     }
     
     .photo {
@@ -238,14 +261,7 @@ p {
         width: 10.625rem;
         height: 10.625rem;
         margin: 0.3125rem;
-    }
-
-    .about-me {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0.5rem;
-    }
+    } 
 
     .personal-info {
         margin: 0.3125rem;

@@ -1,22 +1,25 @@
+@use "src/variables.scss" as *;
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
+    font-size: 1.25rem;
+    gap: 1rem;
     bottom: 0; 
     width: 100%;
     padding: 1rem 0; 
-    background: #cedef1;
-    opacity: 0.5;
-    color: #333;
+    background: $color-primary; 
+    color: $color-primary-dark-text;
 }
 
 .footer a {
-    color: #333;
+    color: $color-primary-dark-text;
 }
 
 .footer a:hover {
-    color: blue;
+    color: $color-primary-contrast;
 }
 
 .footer .social > * {
@@ -34,7 +37,7 @@
 
 @media screen and (max-width: 1200px) {
     .footer { 
-    position: relative;
+    position: fixed;
     } 
 }
 

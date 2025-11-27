@@ -13,9 +13,7 @@ import { Chart } from 'chart.js';
     standalone: true,
     imports: [
       CommonModule,
-      TranslateModule,
-      HeaderComponent,
-      FooterComponent
+      TranslateModule 
     ]
 })
 export class SkillsComponent implements OnInit {

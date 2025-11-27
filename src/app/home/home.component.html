@@ -1,23 +1,34 @@
-<app-header></app-header>
-
 <div class="container">
   <div class="about-me">
     <span class="personal-info" id="first-span">
-      <p>{{ "home.header" | translate }}</p>
+      <p class="orange">{{ "home.const" | translate }}</p>
+      <p class="white">{{ "home.me" | translate }}</p>
+      <p class="orange">{{ ":" }}</p>
+      <p class="purple">{{ "home.myself" | translate }}</p>
+      <p class="orange">{{ "=" }}</p>
+      <p class="yellow">{{ "{" }}</p>
+    </span>
+    <span class="personal-info" id="first-span">
+      <p>"{{ "home.greet" | translate }}": "{{ "home.header" | translate }}"</p>
     </span>
     <span class="personal-info" id="second-span">
-      <p>{{ "home.name" | translate }}</p>
+      <p>"{{ "home.keyName" | translate }}": "{{ "home.name" | translate }}"</p>
     </span>
-    <span class="personal-info" id="third-span">
-      <p>{{ "home.am" | translate }}</p>
+    <!-- <span class="personal-info" id="third-span">
+      <p>"{{ "greet" }}": {{ "home.am" | translate }}</p>
+    </span> -->
+    <span class="personal-info" id="fourth-span">
+      <p>
+        "{{ "home.role" | translate }}": "{{ "home.developer" | translate }}"
+      </p>
     </span>
     <span class="personal-info" id="fourth-span">
-      <p>{{ "home.developer" | translate }}</p>
+      <p class="yellow">{{ "}" }}</p>
     </span>
   </div>
 
   <div class="photo">
-    <img id="my-img" src="../../assets/images/cv photo.jpg" alt="" />
+    <img id="my-img" src="../../assets/images/myImg.jpg" alt="" />
   </div>
 
   <div class="techniques">
@@ -28,9 +39,7 @@
       <img src="../../assets/images/ts.png" alt="" />
     </div>
     <div class="technique3">
-      <img src="../../assets/images/angular.png" alt="" />
+      <img src="../../assets/images/angular_gradient.png" alt="" />
     </div>
   </div>
 </div>
-
-<app-footer></app-footer>
