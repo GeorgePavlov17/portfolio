@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Chart, registerables, ChartConfiguration, ChartDataset } from 'chart.js';
-import { callback } from 'chart.js/dist/helpers/helpers.core';
+import { Chart, ChartDataset, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
@@ -32,7 +31,6 @@ export class ChartService {
     let dataset: ChartDataset[] = [];
 
     dataset = [ this.setChartColor(chart, labels, true, values, this.borderColor.purple ) ];
-    console.log('dataset', dataset);
 
     return  {
       type: 'line',
