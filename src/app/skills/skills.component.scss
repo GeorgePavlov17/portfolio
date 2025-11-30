@@ -14,19 +14,17 @@
 
 .container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     align-items: center;
     justify-content: center; 
 
     .skills-container {
     display: flex;
     align-items: center;
-    margin: 1.5rem;
-    // justify-content: space-between;
+    margin: 1.5rem; 
     gap: 4rem;
     flex-wrap: wrap;
-    width: 50%;
-}
+    }
 
     .chart {
         display: flex;

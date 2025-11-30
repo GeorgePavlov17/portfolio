@@ -1,10 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
-import { ChartService } from '../services/chart.service';
 import { Chart } from 'chart.js';
+import { ChartService } from '../services/chart.service';
 
 @Component({
     selector: 'app-skills',
@@ -13,7 +11,7 @@ import { Chart } from 'chart.js';
     standalone: true,
     imports: [
       CommonModule,
-      TranslateModule 
+      TranslateModule
     ]
 })
 export class SkillsComponent implements OnInit {
@@ -31,12 +29,12 @@ export class SkillsComponent implements OnInit {
 
   constructor(private chartService: ChartService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
 
   }
 
    ngAfterViewInit(): void {
-    this.createChart();
+    this.createChart(); 
   } 
 
   createChart() {
