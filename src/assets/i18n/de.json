@@ -25,7 +25,10 @@
         "universityNameThree": "Udemy",
         "universitySpecialtyOne": "Industriemanagement – „Ingenieur – Manager“",
         "universitySpecialtyTwo": "JavaScript von den Grundlagen bis zu fortgeschrittenen JS-Praktiken lernen.",
-        "universitySpecialtyThree": "Verschiedene Kurse absolvieren – JavaScript, Typescript, HTML & CSS, Angular."
+        "universitySpecialtyThree": "Verschiedene Kurse absolvieren – JavaScript, Typescript, HTML & CSS, Angular.",
+        "aboutMeOne": "Ich habe meine Karriere in diesem Bereich im Herbst 2021 begonnen als Frontend-Entwickler mit einem starken Fokus auf der Erstellung sauberer, leistungsfähiger und skalierbarer Web- und Mobilanwendungen.In den letzten Jahren habe ich hauptsächlich mit Angular, Ionic und TypeScript gearbeitet und produktionsreife Funktionen für Web- und Mobilplattformen (iOS und Android) bereitgestellt.",
+        "aboutMeTwo": "Ich habe Spaß daran, komplexe Probleme zu lösen, Anwendungen zu optimieren und die allgemeine Benutzererfahrung zu verbessern. Ich habe von Anfang bis Ende an mehreren Projekten mitgewirkt – von der Implementierung der Benutzeroberfläche über das Schreiben wartungsfreundlicher Codes und das Erstellen von Unit-Tests bis hin zur Veröffentlichung mobiler Builds im App Store und bei Google Play.",
+        "aboutMeThree": "Ich interessiere mich leidenschaftlich für Codequalität, moderne Benutzeroberflächen und das kontinuierliche Erlernen neuer Technologien."
     },
     "contact": {
         "header": "Kontaktieren Sie mich"

@@ -25,7 +25,10 @@
         "universityNameThree": "Udemy",
         "universitySpecialtyOne": "Industrial Management - 'Engineer - Manager'",
         "universitySpecialtyTwo": "Learning JavaScript from the basics to the advanced JS practices.",
-        "universitySpecialtyThree": "Going through different courses - JavaScript, Typescript, HTML & CSS, Angular"
+        "universitySpecialtyThree": "Going through different courses - JavaScript, Typescript, HTML & CSS, Angular",
+        "aboutMeOne": "I have started my path in the field back in the fall of 2021 as a Frontend Developer with a strong focus on building clean, performant, and scalable web and mobile applications. For the past few years I've been working mainly with Angular, Ionic and TypeScript, delivering production-ready features across both web and mobile platforms (iOS & Android).",
+        "aboutMeTwo": "I enjoy solving complex problems, optimizing applications, and improving overall user experience. I've contributed to multiple projects from start to finish — implementing UI, writing maintainable code, creating unit tests, and publishing mobile builds to App Store and Google Play.",
+        "aboutMeThree": "I’m passionate about code quality, modern UI, and continuously learning new technologies."
     },
     "contact": {
         "header": "Contact Me"
