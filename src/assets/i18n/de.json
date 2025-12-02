@@ -31,7 +31,15 @@
         "aboutMeThree": "Ich interessiere mich leidenschaftlich für Codequalität, moderne Benutzeroberflächen und das kontinuierliche Erlernen neuer Technologien."
     },
     "contact": {
-        "header": "Kontaktieren Sie mich"
+        "getInTouch": "Kontakt aufnehmen",
+        "dropMessage": "Sie können mir jederzeit eine Nachricht schicken.",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "sendMessage": "Nachricht senden",
+        "write": "Schreiben Sie Ihre Nachricht...",
+        "yourName": "Ihr Name",
+        "yourEmail": "Ihre E-Mail-Adresse"
     },
     "header": {
         "header": "Georgi",

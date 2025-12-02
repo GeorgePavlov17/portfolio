@@ -30,8 +30,16 @@
         "aboutMeTwo": "I enjoy solving complex problems, optimizing applications, and improving overall user experience. I've contributed to multiple projects from start to finish — implementing UI, writing maintainable code, creating unit tests, and publishing mobile builds to App Store and Google Play.",
         "aboutMeThree": "I’m passionate about code quality, modern UI, and continuously learning new technologies."
     },
-    "contact": {
-        "header": "Contact Me"
+    "contact": { 
+        "getInTouch": "Get In Touch",
+        "dropMessage": "Feel free to drop me a message anytime.",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "sendMessage": "Send Message",
+        "write": "Write your message...",
+        "yourName": "Your name",
+        "yourEmail": "Your email"
     },
     "header": {
         "header": "Georgi",

@@ -1,29 +1,27 @@
-<div class="container">
-  <div class="contact-header">
-    <h2>{{ "contact.header" | translate }}</h2>
-  </div>
+<div class="container"> 
+  <div class="contact-container">
+    <div class="contact-card">
+      <h2 class="title">{{ "contact.getInTouch" | translate }}</h2>
+      <p class="subtitle">{{ "contact.dropMessage" | translate }}</p>
 
-  <div class="contact-cards">
-    <span class="card">
-      <i class="fa fa-envelope-o fa-2x"></i>
-      <a href="mailto:georgipavlov17@gmail.com">georgipavlov17&#64;gmail.com</a>
-    </span>
-    <!-- <span class="card">
-            <i class="fa fa-phone-square fa-2x"></i> 
-            <a href="tel:+359897802007">+359897802007</a>
-        </span> -->
-  </div>
+      <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+        <div class="form-group">
+        <label>{{ "contact.name" | translate }}</label>
+        <input type="text" formControlName="name" placeholder="{{ 'contact.yourName' | translate }}" />
+        </div>
 
-  <!-- <div class="input-box">
-        <div class="contact-input">
-            <input type="text" placeholder="Name">
+        <div class="form-group">
+        <label>{{ "contact.email" | translate }}</label>
+        <input type="email" formControlName="email" placeholder="{{ 'contact.yourEmail' | translate }}" />
         </div>
-        <div class="contact-input">
-            <input type="text" placeholder="Email">
+
+        <div class="form-group">
+        <label>{{ "contact.message" | translate }}</label>
+        <textarea formControlName="message" rows="5" placeholder="{{ 'contact.write' | translate }}"></textarea>
         </div>
-        <div class="contact-input">
-            <textarea type="text" placeholder="Message"></textarea>
-        </div>
-        <button type="button">Submit</button>
-    </div> -->
+
+        <button type="submit" class="submit-btn">{{ "contact.sendMessage" | translate }}</button>
+      </form>
+    </div>
+  </div>
 </div>
