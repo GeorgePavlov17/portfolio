@@ -43,7 +43,7 @@ export class ChartService {
         maintainAspectRation: false,
         interaction: {
           intersect: false,
-          mode: 'index'
+          mode: 'nearest'
         },
         hover: {
           mode: 'index'
@@ -56,6 +56,9 @@ export class ChartService {
         plugins: {
           legend: {
             display: false
+          },
+          tooltip: {
+            enabled: true
           }
         },
         scales: {

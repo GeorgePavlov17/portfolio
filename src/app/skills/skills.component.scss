@@ -21,6 +21,8 @@
     .skills-container {
     display: flex;
     align-items: center;
+    width: 50vw;
+    justify-content: center;
     margin: 1rem; 
     gap: 3rem;
     flex-wrap: wrap;
@@ -31,7 +33,7 @@
         align-items: center;
         justify-content: center; 
         width: 50%;
-        height: 50vh;
+        height: 40vh;
 
         .chart-element {
             width: 100%;
@@ -49,7 +51,7 @@ h2 {
 
 p {
     color: $color-primary-dark-text; 
-    font-size: 1.25rem; 
+    font-size: 1rem; 
 } 
 
 .experience-container {
@@ -60,11 +62,11 @@ p {
 
 .skill-card {
     position: relative;
-    // margin: 1.5rem;
     cursor: pointer;
     text-align: center;
-    border-radius: 1rem;
     overflow: hidden;
+    width: 6.25rem;
+    height: 6.25rem;
 }
 
 .skill-card img:hover {
@@ -73,8 +75,8 @@ p {
 }
 
 img {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 1rem;
 }
 
