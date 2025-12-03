@@ -3,8 +3,7 @@
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: fixed;
+    justify-content: center; 
     font-size: 1.25rem;
     gap: 1rem;
     bottom: 0; 
@@ -20,6 +19,7 @@
 
 .footer a:hover {
     color: $color-primary-contrast;
+    opacity: 0.9;
 }
 
 .footer .social > * {
@@ -37,15 +37,14 @@
 
 @media screen and (max-width: 1200px) {
     .footer { 
-    position: fixed;
+    // position: fixed;
     } 
 }
 
 //Smartphones
 @media screen and (max-width: 500px) {
     .footer {
-        display: flex;
-        position: absolute;
+        display: flex; 
         justify-content: center;
         align-items: center;
         padding: 0;
