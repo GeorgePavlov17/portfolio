@@ -23,9 +23,9 @@ export class SkillsComponent implements OnInit {
     this.chart?.resize();
   }
 
-    skillsLabels = [ 'Angular', 'Ionic', 'TypeScript', 'JavaScript', 'HTML', 'SCSS' ];
+  skillsLabels = [ 'JavaScript', 'TypeScript', 'HTML', 'SCSS', 'Angular', 'Ionic', 'Git', 'Npm', 'Webpack', 'Swagger' ];
   
-    skillsValues = [ 92, 80, 88, 85, 95, 85 ];
+  skillsValues = [ 88, 82, 92, 90, 95, 90, 89, 87, 75, 97 ];
 
   constructor(private chartService: ChartService) { }
 
@@ -33,8 +33,10 @@ export class SkillsComponent implements OnInit {
 
   }
 
-   ngAfterViewInit(): void {
+  ngAfterViewInit(): void {
     this.createChart(); 
+
+    setTimeout(() => this.attachIconEvents(), 0);
   } 
 
   createChart() {
@@ -45,4 +47,33 @@ export class SkillsComponent implements OnInit {
     const ctx = this.chartRef.nativeElement;
     this.chart = new Chart(ctx, this.chartService.createSkillsChart(ctx, this.skillsValues, this.skillsLabels) as any); 
   }
+
+  attachIconEvents() {
+    const icons = document.querySelectorAll('.skill-card'); 
+
+    icons.forEach(icon => { 
+      const index = Number(icon.getAttribute('data-index')); 
+
+      icon.addEventListener('click', () => { 
+         this.chart?.tooltip?.setActiveElements(
+          [{ datasetIndex: 0, index }],
+          { x: 0, y: 0 }
+        );
+        this.chart?.update();
+      });
+ 
+      icon.addEventListener('mouseenter', () => { 
+        this.chart?.tooltip?.setActiveElements(
+          [{ datasetIndex: 0, index }],
+          { x: 0, y: 0 }
+        );
+        this.chart?.update();
+      });
+ 
+      icon.addEventListener('mouseleave', () => { 
+        this.chart?.tooltip?.setActiveElements([], { x: 0, y: 0 });
+        this.chart?.update();
+      });
+    });
+  } 
 }
