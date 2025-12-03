@@ -62,7 +62,11 @@
         "role": "role"
     },
     "work": {
-        "header": " My projects",
+        "header": "My work",
+        "intro": "Here are some selected real-world projects I've worked on in a professional environment, showcasing production-ready frontend development, mobile apps, and scalable UI architecture.",
+        "introDummy": "Below are some early personal projects I built when I first started coding — smaller experimental apps that helped me learn the fundamentals and explore new technologies.",
+        "role": "Role:",
+        "technologies": "Technologies:",
         "name": "My name is Georgi",
         "am": "I am ",
         "developer": "Front End Developer",

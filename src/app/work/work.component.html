@@ -1,8 +1,30 @@
 <div class="container">
   <div class="heading">
-    <h2><i class="fa fa-cogs"></i>{{ "work.header" | translate }}</h2>
+    <h2>{{ "work.header" | translate }}</h2>
   </div>
 
+  <div class="work-page">
+    <p>{{ "work.intro" | translate }}</p>
+
+    <div class="projects">
+      @for(project of projects; track project; let i = $index ) {
+          <div class="project-card">
+            <h4>{{ project.name }}</h4>
+            <p><strong>{{ "work.role" | translate }}</strong> {{ project.role }}</p>
+            <p><strong>{{ "work.technologies" | translate }}</strong> 
+              @for(tech of project.technologies; track tech; let i = $index) {
+                  <span >
+                    {{ tech }} 
+                  </span>
+                } 
+            </p>
+            <p>{{ project.description }}</p>
+          </div>
+      } 
+    </div>
+  </div>
+
+  <p class="dummy-projects-intro">{{ "work.introDummy" | translate }}</p>
   <div class="projects">
     <div class="card">
       <div class="img">
