@@ -79,3 +79,25 @@ transition: 0.3s;
   from { opacity: 0; transform: translateY(1.25rem); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+//Smartphones
+@media screen and (max-width: 500px) {
+
+  .heading {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+  }
+
+  .heading > h2 {
+      font-size: 1.5rem;
+  }
+
+  .container {
+    align-items: center;
+    margin-bottom: 1.875rem;
+
+    .contact-container {
+      width: 60vw;
+    }
+  }
+}

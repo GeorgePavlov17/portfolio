@@ -9,8 +9,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1.5rem;
+    align-items: center; 
     margin-bottom: 2rem;
 }
 
@@ -230,15 +229,48 @@ i {
 //Smartphones
 @media screen and (max-width: 500px) {
     .heading {
-        margin: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem; 
     }
 
     .heading > h2 {
         font-size: 1.5rem;
     }
 
+    .work-page {
+      p {
+        margin-top: 0;
+        width: 80vw;
+        text-align: justify;
+        font-size: 1rem;
+      }
+
+      .projects {
+         width: 80vw;
+
+         .project-card {
+          width: 100%; 
+        }
+
+        h4 {
+          margin-top: 0;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .dummy-projects-intro {
+      margin-top: 0;
+      width: 80vw;
+      text-align: justify;
+      font-size: 1rem;
+    }
+
     .projects {
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .card {

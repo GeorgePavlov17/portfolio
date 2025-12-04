@@ -117,14 +117,23 @@ i {
 @media screen and (max-width: 500px) {
     .container {
         margin-top: 1.5rem;
+
+        .about-container {
+          width: 90vw;
+        }
+
+        .university {
+          flex-direction: column;
+          margin: 2.1875rem;
+          width: 90vw;
+
+          .university-card {
+            width: 70vw;
+          }
+        }
     }
 
     .container > h2 {
         font-size: 1.5rem;
-    }
-
-    .university {
-        flex-direction: column;
-        margin: 2.1875rem;
-    }
+    } 
 }

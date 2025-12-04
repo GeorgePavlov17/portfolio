@@ -1,24 +1,20 @@
 <div class="navbar">
-  <h1 class="heading" [routerLink]="'/home'">
-    <i class="fa fa-terminal"></i> {{ "header.header" | translate }}
-  </h1>
+  <div class="heading-container">
+      <h1 class="heading" [routerLink]="'/home'">
+        <i class="fa fa-terminal"></i> {{ "header.header" | translate }}
+      </h1>
+
+      <div class="mobile-view" [class.mobile-view-hidden]="!isMobile"> 
+        <app-language-buttons></app-language-buttons>
+      </div>
+  </div> 
 
   <div class="links">
-    <div class="language-options-container">
-      <button class="language-button" (click)="setLanguage('en')">
-        <span class="button-default" [class.button-clicked]="isSelected">{{
-          "lang.en" | translate
-        }}</span>
-      </button>
-      <button class="language-button" (click)="setLanguage('de')">
-        <span class="button-default" [class.button-clicked]="!isSelected">{{
-          "lang.de" | translate
-        }}</span>
-      </button>
+    <div class="desktop-view" [class.desktop-view-hidden]="isMobile"> 
+      <app-language-buttons></app-language-buttons> 
     </div>
 
     <ul>
-      <!-- <p>[</p> -->
       <li>
         <a [routerLink]="'/home'" [routerLinkActive]="['selected-page']">{{
           "header.tabOne" | translate
@@ -44,7 +40,6 @@
           "header.tabFive" | translate
         }}</a>
       </li>
-      <!-- <p>]</p> -->
     </ul>
   </div>
 </div>

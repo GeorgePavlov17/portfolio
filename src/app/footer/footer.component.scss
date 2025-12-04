@@ -44,20 +44,20 @@
 //Smartphones
 @media screen and (max-width: 500px) {
     .footer {
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
     }
 
     .social {
-        padding-top: 0.3125rem;
+      padding-top: 0.3125rem;
     }
 
     .social > p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
     }
 }
