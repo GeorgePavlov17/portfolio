@@ -1,0 +1,12 @@
+<div class="language-options-container">
+  <button class="language-button" (click)="setLanguage('en')">
+    <span class="button-default" [class.button-clicked]="isSelected">{{
+      "lang.en" | translate
+    }}</span>
+  </button>
+  <button class="language-button" (click)="setLanguage('de')">
+    <span class="button-default" [class.button-clicked]="!isSelected">{{
+      "lang.de" | translate
+    }}</span>
+  </button>
+</div>
