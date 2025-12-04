@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageButtonsComponent } from '../language-buttons/language-buttons.component';
+import { TranslationService } from '../services/translation.service';
 
 @Component({
     selector: 'app-header',
@@ -12,36 +14,33 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
       CommonModule,
       TranslateModule,
       RouterLink,
-      RouterLinkActive
+      RouterLinkActive,
+      LanguageButtonsComponent
     ]
 })
-export class HeaderComponent implements OnInit { 
-  selectedLanguage!: string | null; 
-  isSelected!: boolean;
+export class HeaderComponent implements OnInit {
+  isMobile!: boolean;
 
-  constructor( private translate: TranslateService ) { }
+  constructor( private translationService: TranslationService ) { 
+     const media = window.matchMedia('(max-width: 768px)');
 
-  ngOnInit(): void {
-     this.checkLanguage();
+     window.innerWidth < 500 ? this.isMobile = true : this.isMobile = false; 
+
+     media.addEventListener('change', (e) => {
+      console.log('e', e);
+      this.isMobile = e.matches;
+      });
+
+    window.addEventListener('resize', () => { 
+       window.innerWidth < 768 ? this.isMobile = true : this.isMobile = false;  
+    }); 
+  }
+
+  ngOnInit(): void { 
+    
   }   
 
   setLanguage(language: string ) {  
-    this.isSelected = !this.isSelected;
-    const lang = language == 'en' ? 'en' : 'de';
-     language === 'en' ? this.isSelected = true : this.isSelected = false;
-
-    this.selectedLanguage !== null ? lang == this.selectedLanguage : lang; 
-
-    lang == 'en' ? this.translate.use('en') : this.translate.use('de');
-
-    localStorage.setItem('selectedLanguage', lang);  
-  }
-
-  checkLanguage() {
-    this.selectedLanguage = localStorage.getItem('selectedLanguage');   
-
-    this.isSelected = ( (this.selectedLanguage !== null && this.selectedLanguage == 'en' ) || this.selectedLanguage == undefined) ? this.isSelected = true : this.isSelected = false; 
-
-    this.selectedLanguage !== null ? this.translate.use( this.selectedLanguage ) : this.translate.use( 'en' ); 
-  }
+    this.translationService.setLanguage(language); 
+  } 
 }

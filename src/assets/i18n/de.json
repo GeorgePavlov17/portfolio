@@ -9,6 +9,9 @@
         "technologySix": "Ionic",
         "technologySeven": "Sass",
         "technologyEight": "Git",
+        "technologyNine": "NPM",
+        "technologyTen": "Webpack",
+        "technologyEleven": "Swagger",
         "periodOne": "Juni 2022",
         "periodTwo": "April 2022",
         "seniorityOne": "Junior-Frontend-Entwickler",
@@ -22,10 +25,21 @@
         "universityNameThree": "Udemy",
         "universitySpecialtyOne": "Industriemanagement – „Ingenieur – Manager“",
         "universitySpecialtyTwo": "JavaScript von den Grundlagen bis zu fortgeschrittenen JS-Praktiken lernen.",
-        "universitySpecialtyThree": "Verschiedene Kurse absolvieren – JavaScript, Typescript, HTML & CSS, Angular."
+        "universitySpecialtyThree": "Verschiedene Kurse absolvieren – JavaScript, Typescript, HTML & CSS, Angular.",
+        "aboutMeOne": "Ich habe meine Karriere in diesem Bereich im Herbst 2021 begonnen als Frontend-Entwickler mit einem starken Fokus auf der Erstellung sauberer, leistungsfähiger und skalierbarer Web- und Mobilanwendungen.In den letzten Jahren habe ich hauptsächlich mit Angular, Ionic und TypeScript gearbeitet und produktionsreife Funktionen für Web- und Mobilplattformen (iOS und Android) bereitgestellt.",
+        "aboutMeTwo": "Ich habe Spaß daran, komplexe Probleme zu lösen, Anwendungen zu optimieren und die allgemeine Benutzererfahrung zu verbessern. Ich habe von Anfang bis Ende an mehreren Projekten mitgewirkt – von der Implementierung der Benutzeroberfläche über das Schreiben wartungsfreundlicher Codes und das Erstellen von Unit-Tests bis hin zur Veröffentlichung mobiler Builds im App Store und bei Google Play.",
+        "aboutMeThree": "Ich interessiere mich leidenschaftlich für Codequalität, moderne Benutzeroberflächen und das kontinuierliche Erlernen neuer Technologien."
     },
     "contact": {
-        "header": "Kontaktieren Sie mich"
+        "getInTouch": "Kontakt aufnehmen",
+        "dropMessage": "Sie können mir jederzeit eine Nachricht schicken.",
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "sendMessage": "Nachricht senden",
+        "write": "Schreiben Sie Ihre Nachricht...",
+        "yourName": "Ihr Name",
+        "yourEmail": "Ihre E-Mail-Adresse"
     },
     "header": {
         "header": "Georgi",
@@ -39,10 +53,20 @@
         "header": "Hallo !",
         "name": "Mein Name ist Georgi",
         "am": "Ich bin ",
-        "developer": "Frontend-Entwickler"  
+        "developer": "Software-Entwickler",
+        "const": "const",
+        "me": "me",
+        "myself": "ich selbst",
+        "greet": "begrüßen",
+        "keyName": "Name",
+        "role": "Rolle"
     },
     "work": {
-        "header": " Meine Projekte",
+        "header": "Meine Arbeit",
+        "intro": "Hier sind einige ausgewählte Projekte aus der Praxis, an denen ich in einem professionellen Umfeld gearbeitet habe und die produktionsreife Frontend-Entwicklung, mobile Apps und skalierbare UI-Architektur zeigen.",
+        "introDummy": "Im Folgenden finden Sie einige frühe persönliche Projekte, die ich zu Beginn meiner Programmierkarriere entwickelt habe – kleinere experimentelle Apps, die mir dabei halfen, die Grundlagen zu erlernen und neue Technologien zu entdecken.",
+        "role": "Rolle:",
+        "technologies": "Technologien:",
         "name": "Mein Name ist Georgi",
         "am": "Ich bin ",
         "developer": "Frontend-Entwickler",

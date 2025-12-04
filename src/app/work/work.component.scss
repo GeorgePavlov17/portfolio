@@ -1,3 +1,5 @@
+@use "src/variables.scss" as *;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,36 +7,137 @@
 }
 
 .container {
-    // display: flex;
-    // flex-direction: row;
-    margin-top: 1.5rem;
-    margin-bottom: 8.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 2rem;
 }
 
 .heading {
     text-align: center;
+    margin-top: 3rem; 
+}
+
+.work-page { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    text-align: center;
+        margin-top: 2rem; 
+    font-size: 1.2rem;
+    color: #8B949E;
+    width: 60vw;
+  }
+
+  .projects {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   margin: 2rem 0;
+    
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      margin: 1rem;
+      padding: 1.625rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      // height: 100%;
+      width: 60vw;
+      box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+      } 
+
+      p {
+        color: #d2a8ff; 
+        text-align: left;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+        width: auto;
+
+        &:last-child {
+          color: #C9D1D9; 
+        }
+
+        strong {
+        color: #ffa657; 
+      }
+
+        span {
+          color: #d2a8ff;
+        }
+         
+      }
+    }
+  }
+
+  .technologies {
     margin-top: 3rem;
-    margin-bottom: 3.125rem;
-    margin-top: 3rem;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: inline-flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        background: rgba(0,0,0,0.05);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 600;
+        color: #333;
+      }
+    }
+  }
+}
+
+.dummy-projects-intro {
+  text-align: center;
+  margin-top: 2rem; 
+  font-size: 1.2rem;
+  color: #8B949E;
+  width: 60vw;
 }
 
 h2 {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    opacity: 0.5;
-}
-
-h2:hover {
-    cursor: pointer;
-    color: blue;
-}
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $color-primary-dark-text; 
+} 
 
 .projects {
     display: flex;
     // flex-direction: row;
-    margin-top: 1.5rem;
+    gap: 2rem;
+    margin-top: 2rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -43,28 +146,40 @@ h2:hover {
 .card {
     display: flex;
     flex-direction: column;
-    background: #cedef1;
-    color: #fff;
+    background: $color-primary-dark-text;
+    color: $color-primary-text;
     cursor: pointer;
     border-radius: 0.625rem;
-    margin: 1.25rem;
+    // margin: 1.25rem;
     padding: 0.625rem;
     width: 18.125rem;
 
     &:hover {
         box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
     }
+
+    .img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      i {
+      color: #333; 
+
+      &:hover {
+        color: $color-secondary;
+      }
+    } 
+    } 
 }
 
 img {
     width: 16.25rem;
     height: 16.25rem;
     border-radius: 0.625rem;
-    object-fit: cover;
-
-    // &:hover {
-
-    // }
+    object-fit: cover; 
 }
 
 h4 {
@@ -82,11 +197,10 @@ h4 {
 }
 
 i {
-    color: #333;
+    color: $color-primary-dark-text;
 
     &:hover {
-        color: blue;
-        opacity: 0.5;
+        color: $color-primary-contrast; 
     }
 }
 
@@ -115,15 +229,48 @@ i {
 //Smartphones
 @media screen and (max-width: 500px) {
     .heading {
-        margin: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem; 
     }
 
     .heading > h2 {
         font-size: 1.5rem;
     }
 
+    .work-page {
+      p {
+        margin-top: 0;
+        width: 80vw;
+        text-align: justify;
+        font-size: 1rem;
+      }
+
+      .projects {
+         width: 80vw;
+
+         .project-card {
+          width: 100%; 
+        }
+
+        h4 {
+          margin-top: 0;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .dummy-projects-intro {
+      margin-top: 0;
+      width: 80vw;
+      text-align: justify;
+      font-size: 1rem;
+    }
+
     .projects {
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .card {

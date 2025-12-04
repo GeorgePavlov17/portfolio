@@ -1,43 +1,50 @@
-<app-header></app-header>
 <div class="heading">
-  <h2><i class="fa fa-book"></i>{{ "skills.header" | translate }}</h2>
+  <h2>{{ "skills.header" | translate }}</h2>
 </div>
 <div class="container">
-  <div class="skills-container">
-    <div class="skill-card">
-      <img src="../../assets/images/js.png" alt="" />
+  <div class="skills-container"> 
+     <div class="skill-card" data-index="0">
+      <img src="../../assets/svg/js.svg" alt="" />
       <p>{{ "skills.technologyOne" | translate }}</p>
     </div>
-    <div class="skill-card">
-      <img src="../../assets/images/ts.png" alt="" />
+    <div class="skill-card" data-index="1">
+      <img src="../../assets/svg/typescript.svg" alt="" />
       <p>{{ "skills.technologyTwo" | translate }}</p>
     </div>
-    <div class="skill-card">
-      <img src="../../assets/images/html.png" alt="" />
+    <div class="skill-card" data-index="2">
+      <img src="../../assets/svg/html.svg" alt="" />
       <p>{{ "skills.technologyThree" | translate }}</p>
     </div>
-    <div class="skill-card">
-      <img src="../../assets/images/css.png" alt="" />
+    <div class="skill-card" data-index="3">
+      <img src="../../assets/svg/css.svg" alt="" />
       <p>{{ "skills.technologyFour" | translate }}</p>
     </div>
-    <div class="skill-card">
-      <img src="../../assets/images/angular.png" alt="" />
+    <div class="skill-card" data-index="4">
+      <img src="../../assets/svg/angular.svg" alt="" />
       <p>{{ "skills.technologyFive" | translate }}</p>
     </div>
-    <div class="skill-card">
-      <img src="../../assets/images/ionic.png" alt="" />
+    <div class="skill-card" data-index="5">
+      <img src="../../assets/svg/ionic.svg" alt="" />
       <p>{{ "skills.technologySix" | translate }}</p>
-    </div>
-    <div class="skill-card">
-      <img src="../../assets/images/sass.png" alt="" />
-      <p>{{ "skills.technologySeven" | translate }}</p>
-    </div>
-    <div class="skill-card">
-      <img src="../../assets/images/git.png" />
+    </div>   
+    <div class="skill-card" data-index="6">
+      <img src="../../assets/svg/git.svg" />
       <p>{{ "skills.technologyEight" | translate }}</p>
     </div>
-  </div>
-  <div class="experience-container">
+    <div class="skill-card" data-index="7">
+      <img src="../../assets/svg/npm.svg" alt="" />
+      <p>{{ "skills.technologyNine" | translate }}</p>
+    </div>
+    <div class="skill-card"  data-index="8">
+      <img src="../../assets/svg/webpack.svg" alt="" />
+      <p>{{ "skills.technologyTen" | translate }}</p>
+    </div>
+    <div class="skill-card"  data-index="9">
+      <img src="../../assets/svg/swagger.svg" alt="" />
+      <p>{{ "skills.technologyEleven" | translate }}</p>
+    </div> 
+  </div> 
+  <!-- <div class="experience-container">
     <div class="section">
       <div class="year">
         <h4>{{ "skills.periodOne" | translate }}</h4>
@@ -60,7 +67,9 @@
         {{ "skills.companyNameOne" | translate }}
       </p>
     </div>
+  </div> -->
+
+  <div class="chart">
+    <canvas class="chart-element" #chart></canvas>
   </div>
 </div>
-
-<app-footer></app-footer>

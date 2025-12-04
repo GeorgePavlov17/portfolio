@@ -9,6 +9,9 @@
         "technologySix": "Ionic",
         "technologySeven": "Sass",
         "technologyEight": "Git",
+        "technologyNine": "NPM",
+        "technologyTen": "Webpack",
+        "technologyEleven": "Swagger",
         "periodOne": "June 2022",
         "periodTwo": "April 2022",
         "seniorityOne": "Junior Front-End Developer",
@@ -22,10 +25,21 @@
         "universityNameThree": "Udemy",
         "universitySpecialtyOne": "Industrial Management - 'Engineer - Manager'",
         "universitySpecialtyTwo": "Learning JavaScript from the basics to the advanced JS practices.",
-        "universitySpecialtyThree": "Going through different courses - JavaScript, Typescript, HTML & CSS, Angular"
+        "universitySpecialtyThree": "Going through different courses - JavaScript, Typescript, HTML & CSS, Angular",
+        "aboutMeOne": "I have started my path in the field back in the fall of 2021 as a Frontend Developer with a strong focus on building clean, performant, and scalable web and mobile applications. For the past few years I've been working mainly with Angular, Ionic and TypeScript, delivering production-ready features across both web and mobile platforms (iOS & Android).",
+        "aboutMeTwo": "I enjoy solving complex problems, optimizing applications, and improving overall user experience. I've contributed to multiple projects from start to finish — implementing UI, writing maintainable code, creating unit tests, and publishing mobile builds to App Store and Google Play.",
+        "aboutMeThree": "I’m passionate about code quality, modern UI, and continuously learning new technologies."
     },
-    "contact": {
-        "header": "Contact Me"
+    "contact": { 
+        "getInTouch": "Get In Touch",
+        "dropMessage": "Feel free to drop me a message anytime.",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "sendMessage": "Send Message",
+        "write": "Write your message...",
+        "yourName": "Your name",
+        "yourEmail": "Your email"
     },
     "header": {
         "header": "Georgi",
@@ -39,10 +53,20 @@
         "header": "Hi !",
         "name": "My name is Georgi",
         "am": "I am ",
-        "developer": "Front End Developer"  
+        "developer": "Software Developer",
+        "const": "const",
+        "me": "me",
+        "myself": "Myself",
+        "greet": "greet",
+        "keyName": "name",
+        "role": "role"
     },
     "work": {
-        "header": " My projects",
+        "header": "My work",
+        "intro": "Here are some selected real-world projects I've worked on in a professional environment, showcasing production-ready frontend development, mobile apps, and scalable UI architecture.",
+        "introDummy": "Below are some early personal projects I built when I first started coding — smaller experimental apps that helped me learn the fundamentals and explore new technologies.",
+        "role": "Role:",
+        "technologies": "Technologies:",
         "name": "My name is Georgi",
         "am": "I am ",
         "developer": "Front End Developer",

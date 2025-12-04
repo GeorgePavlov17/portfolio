@@ -1,22 +1,25 @@
+@use "src/variables.scss" as *;
+
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
+    justify-content: center; 
+    font-size: 1.25rem;
+    gap: 1rem;
     bottom: 0; 
     width: 100%;
     padding: 1rem 0; 
-    background: #cedef1;
-    opacity: 0.5;
-    color: #333;
+    background: $color-primary; 
+    color: $color-primary-dark-text;
 }
 
 .footer a {
-    color: #333;
+    color: $color-primary-dark-text;
 }
 
 .footer a:hover {
-    color: blue;
+    color: $color-primary-contrast;
+    opacity: 0.9;
 }
 
 .footer .social > * {
@@ -34,28 +37,27 @@
 
 @media screen and (max-width: 1200px) {
     .footer { 
-    position: relative;
+    // position: fixed;
     } 
 }
 
 //Smartphones
 @media screen and (max-width: 500px) {
     .footer {
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
     }
 
     .social {
-        padding-top: 0.3125rem;
+      padding-top: 0.3125rem;
     }
 
     .social > p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
     }
 }
