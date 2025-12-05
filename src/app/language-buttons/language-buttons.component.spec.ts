@@ -2,22 +2,22 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LanguageButtonsComponent } from './language-buttons.component';
 
-describe('LanguageButtonsComponent', () => {
+describe( 'LanguageButtonsComponent', () => {
   let component: LanguageButtonsComponent;
   let fixture: ComponentFixture<LanguageButtonsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach( async () => {
+    await TestBed.configureTestingModule( {
       imports: [LanguageButtonsComponent]
-    })
-    .compileComponents();
+    } )
+      .compileComponents();
 
-    fixture = TestBed.createComponent(LanguageButtonsComponent);
+    fixture = TestBed.createComponent( LanguageButtonsComponent );
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  } );
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  it( 'should create', () => {
+    expect( component ).toBeTruthy();
+  } );
+} );

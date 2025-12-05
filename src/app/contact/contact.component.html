@@ -1,4 +1,4 @@
-<div class="container"> 
+<div class="container">
   <div class="contact-container">
     <div class="contact-card">
       <h2 class="title">{{ "contact.getInTouch" | translate }}</h2>
@@ -6,18 +6,18 @@
 
       <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
         <div class="form-group">
-        <label>{{ "contact.name" | translate }}</label>
-        <input type="text" formControlName="name" placeholder="{{ 'contact.yourName' | translate }}" />
+          <label>{{ "contact.name" | translate }}</label>
+          <input type="text" formControlName="name" placeholder="{{ 'contact.yourName' | translate }}" />
         </div>
 
         <div class="form-group">
-        <label>{{ "contact.email" | translate }}</label>
-        <input type="email" formControlName="email" placeholder="{{ 'contact.yourEmail' | translate }}" />
+          <label>{{ "contact.email" | translate }}</label>
+          <input type="email" formControlName="email" placeholder="{{ 'contact.yourEmail' | translate }}" />
         </div>
 
         <div class="form-group">
-        <label>{{ "contact.message" | translate }}</label>
-        <textarea formControlName="message" rows="5" placeholder="{{ 'contact.write' | translate }}"></textarea>
+          <label>{{ "contact.message" | translate }}</label>
+          <textarea formControlName="message" rows="5" placeholder="{{ 'contact.write' | translate }}"></textarea>
         </div>
 
         <button type="submit" class="submit-btn">{{ "contact.sendMessage" | translate }}</button>
