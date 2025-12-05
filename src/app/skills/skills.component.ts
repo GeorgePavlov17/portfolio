@@ -4,76 +4,76 @@ import { TranslateModule } from '@ngx-translate/core';
 import { Chart } from 'chart.js';
 import { ChartService } from '../services/chart.service';
 
-@Component({
-    selector: 'app-skills',
-    templateUrl: './skills.component.html',
-    styleUrls: ['./skills.component.scss'],
-    standalone: true,
-    imports: [
-      CommonModule,
-      TranslateModule
-    ]
-})
+@Component( {
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    TranslateModule
+  ]
+} )
 export class SkillsComponent implements OnInit {
-  @ViewChild('chart') chartRef!: ElementRef<HTMLCanvasElement>;
+  @ViewChild( 'chart' ) chartRef!: ElementRef<HTMLCanvasElement>;
   chart: Chart | undefined;
 
-  @HostListener( 'window:resize', ['$event'])
-  onResize(_event: Event): void {
+  @HostListener( 'window:resize', ['$event'] )
+  onResize( _event: Event ): void {
     this.chart?.resize();
   }
 
-  skillsLabels = [ 'JavaScript', 'TypeScript', 'HTML', 'SCSS', 'Angular', 'Ionic', 'Git', 'Npm', 'Webpack', 'Swagger' ];
-  
-  skillsValues = [ 88, 82, 92, 90, 95, 90, 89, 87, 75, 97 ];
+  skillsLabels = ['JavaScript', 'TypeScript', 'HTML', 'SCSS', 'Angular', 'Ionic', 'Git', 'Npm', 'Webpack', 'Swagger'];
 
-  constructor(private chartService: ChartService) { }
+  skillsValues = [88, 82, 92, 90, 95, 90, 89, 87, 75, 97];
 
-  ngOnInit(): void { 
+  constructor( private chartService: ChartService ) { }
+
+  ngOnInit(): void {
 
   }
 
   ngAfterViewInit(): void {
-    this.createChart(); 
+    this.createChart();
 
-    setTimeout(() => this.attachIconEvents(), 0);
-  } 
+    setTimeout( () => this.attachIconEvents(), 0 );
+  }
 
   createChart() {
-    if(!this.chartRef) return;
+    if ( !this.chartRef ) return;
 
-    if(this.chart) this.chart.destroy();
+    if ( this.chart ) this.chart.destroy();
 
     const ctx = this.chartRef.nativeElement;
-    this.chart = new Chart(ctx, this.chartService.createSkillsChart(ctx, this.skillsValues, this.skillsLabels) as any); 
+    this.chart = new Chart( ctx, this.chartService.createSkillsChart( ctx, this.skillsValues, this.skillsLabels ) as any );
   }
 
   attachIconEvents() {
-    const icons = document.querySelectorAll('.skill-card'); 
+    const icons = document.querySelectorAll( '.skill-card' );
 
-    icons.forEach(icon => { 
-      const index = Number(icon.getAttribute('data-index')); 
+    icons.forEach( icon => {
+      const index = Number( icon.getAttribute( 'data-index' ) );
 
-      icon.addEventListener('click', () => { 
-         this.chart?.tooltip?.setActiveElements(
-          [{ datasetIndex: 0, index }],
-          { x: 0, y: 0 }
-        );
-        this.chart?.update();
-      });
- 
-      icon.addEventListener('mouseenter', () => { 
+      icon.addEventListener( 'click', () => {
         this.chart?.tooltip?.setActiveElements(
           [{ datasetIndex: 0, index }],
           { x: 0, y: 0 }
         );
         this.chart?.update();
-      });
- 
-      icon.addEventListener('mouseleave', () => { 
-        this.chart?.tooltip?.setActiveElements([], { x: 0, y: 0 });
+      } );
+
+      icon.addEventListener( 'mouseenter', () => {
+        this.chart?.tooltip?.setActiveElements(
+          [{ datasetIndex: 0, index }],
+          { x: 0, y: 0 }
+        );
         this.chart?.update();
-      });
-    });
-  } 
+      } );
+
+      icon.addEventListener( 'mouseleave', () => {
+        this.chart?.tooltip?.setActiveElements( [], { x: 0, y: 0 } );
+        this.chart?.update();
+      } );
+    } );
+  }
 }

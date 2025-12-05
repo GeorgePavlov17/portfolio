@@ -7,8 +7,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkComponent } from './work/work.component';
 
 const routes: Routes = [
-  {  
-  path: 'home',
+  {
+    path: 'home',
     component: HomeComponent
   },
   {
@@ -32,14 +32,14 @@ const routes: Routes = [
     path: 'work',
     component: WorkComponent
   },
-   { 
-    path: '**', 
-    component: HomeComponent 
+  {
+    path: '**',
+    component: HomeComponent
   },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
+@NgModule( {
+  imports: [RouterModule.forRoot( routes )],
   exports: [RouterModule]
-})
+} )
 export class AppRoutingModule { }

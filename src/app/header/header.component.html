@@ -1,44 +1,44 @@
 <div class="navbar">
   <div class="heading-container">
-      <h1 class="heading" [routerLink]="'/home'">
-        <i class="fa fa-terminal"></i> {{ "header.header" | translate }}
-      </h1>
+    <h1 class="heading" [routerLink]="'/home'">
+      <i class="fa fa-terminal"></i> {{ "header.header" | translate }}
+    </h1>
 
-      <div class="mobile-view" [class.mobile-view-hidden]="!isMobile"> 
-        <app-language-buttons></app-language-buttons>
-      </div>
-  </div> 
+    <div class="mobile-view" [class.mobile-view-hidden]="!isMobile">
+      <app-language-buttons></app-language-buttons>
+    </div>
+  </div>
 
   <div class="links">
-    <div class="desktop-view" [class.desktop-view-hidden]="isMobile"> 
-      <app-language-buttons></app-language-buttons> 
+    <div class="desktop-view" [class.desktop-view-hidden]="isMobile">
+      <app-language-buttons></app-language-buttons>
     </div>
 
-    <ul>
-      <li>
+    <ul class="navigation-links">
+      <li class="navigation-tabs">
         <a [routerLink]="'/home'" [routerLinkActive]="['selected-page']">{{
           "header.tabOne" | translate
-        }}</a>
+          }}</a>
       </li>
       <li>
         <a [routerLink]="'/about'" [routerLinkActive]="['selected-page']">{{
           "header.tabTwo" | translate
-        }}</a>
+          }}</a>
       </li>
       <li>
         <a [routerLink]="'/work'" [routerLinkActive]="['selected-page']">{{
           "header.tabThree" | translate
-        }}</a>
+          }}</a>
       </li>
       <li>
         <a [routerLink]="'/skills'" [routerLinkActive]="['selected-page']">{{
           "header.tabFour" | translate
-        }}</a>
+          }}</a>
       </li>
       <li>
         <a [routerLink]="'/contact'" [routerLinkActive]="['selected-page']">{{
           "header.tabFive" | translate
-        }}</a>
+          }}</a>
       </li>
     </ul>
   </div>

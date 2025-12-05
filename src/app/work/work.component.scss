@@ -1,139 +1,137 @@
 @use "src/variables.scss" as *;
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    margin-bottom: 2rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 
-.heading {
+  .heading {
     text-align: center;
-    margin-top: 3rem; 
-}
+    margin-top: 3rem;
 
-.work-page { 
+    h2 {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $color-primary-dark-text;
+    }
+  }
+
+  .work-page {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-  h1 {
-    text-align: center;
-    margin-bottom: 1rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #8b949e;
+      width: 60vw;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+
+      .project-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 0.75rem;
+        margin: 1rem;
+        padding: 1.625rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        // height: 100%;
+        width: 60vw;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+          color: $color-primary-contrast-light;
+        }
+
+        p {
+          color: #d2a8ff;
+          text-align: left;
+          margin-top: 0.5rem;
+          line-height: 1.4;
+          width: auto;
+
+          &:last-child {
+            color: #c9d1d9;
+          }
+
+          strong {
+            color: #ffa657;
+          }
+
+          span {
+            color: #d2a8ff;
+          }
+        }
+      }
+    }
+
+    .technologies {
+      margin-top: 3rem;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: inline-flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          background: rgba(0, 0, 0, 0.05);
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-weight: 600;
+          color: #333;
+        }
+      }
+    }
   }
 
-  p {
+  .dummy-projects-intro {
     text-align: center;
-        margin-top: 2rem; 
+    margin-top: 2rem;
     font-size: 1.2rem;
-    color: #8B949E;
+    color: #8b949e;
     width: 60vw;
   }
 
   .projects {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 1rem;
-   margin: 2rem 0;
-    
-    .project-card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 0.75rem;
-      margin: 1rem;
-      padding: 1.625rem;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      // height: 100%;
-      width: 60vw;
-      box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 12px 32px rgba(0,0,0,0.15);
-      }
-
-      h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        color: #fff;
-      } 
-
-      p {
-        color: #d2a8ff; 
-        text-align: left;
-        margin-top: 0.5rem;
-        line-height: 1.4;
-        width: auto;
-
-        &:last-child {
-          color: #C9D1D9; 
-        }
-
-        strong {
-        color: #ffa657; 
-      }
-
-        span {
-          color: #d2a8ff;
-        }
-         
-      }
-    }
-  }
-
-  .technologies {
-    margin-top: 3rem;
-    text-align: center;
-
-    h2 {
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      display: inline-flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      li {
-        background: rgba(0,0,0,0.05);
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        font-weight: 600;
-        color: #333;
-      }
-    }
-  }
-}
-
-.dummy-projects-intro {
-  text-align: center;
-  margin-top: 2rem; 
-  font-size: 1.2rem;
-  color: #8B949E;
-  width: 60vw;
-}
-
-h2 {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: $color-primary-dark-text; 
-} 
-
-.projects {
     display: flex;
     // flex-direction: row;
     gap: 2rem;
@@ -141,100 +139,102 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    background: $color-primary-dark-text;
-    color: $color-primary-text;
-    cursor: pointer;
-    border-radius: 0.625rem;
-    // margin: 1.25rem;
-    padding: 0.625rem;
-    width: 18.125rem;
-
-    &:hover {
-        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
-    }
-
-    .img {
+    .card {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-
-      i {
-      color: #333; 
+      background: $color-primary-dark-text;
+      color: $color-primary-text;
+      cursor: pointer;
+      border-radius: 0.625rem;
+      // margin: 1.25rem;
+      padding: 0.625rem;
+      width: 18.125rem;
 
       &:hover {
-        color: $color-secondary;
+        box-shadow: 0 5px 10px rgb(5 5 5 / 30%);
       }
-    } 
-    } 
-}
 
-img {
-    width: 16.25rem;
-    height: 16.25rem;
-    border-radius: 0.625rem;
-    object-fit: cover; 
+      .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        img {
+          width: 16.25rem;
+          height: 16.25rem;
+          border-radius: 0.625rem;
+          object-fit: cover;
+        }
+
+        i {
+          color: #333;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
 }
 
 h4 {
-    margin: 1rem;
-    font-size: 1.5rem;
-    color: #fff;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: $color-primary-contrast-light;
 }
 .info {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .shader {
-    opacity: 0;
-    display: flex;
+  opacity: 0;
+  display: flex;
 }
 
 i {
-    color: $color-primary-dark-text;
+  color: $color-primary-dark-text;
 
-    &:hover {
-        color: $color-primary-contrast; 
-    }
+  &:hover {
+    color: $color-primary-contrast;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .projects {
-        flex-direction: column;
-        align-items: center;
-    }
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 //Tablets
 @media screen and (max-width: 800px) {
-    .container {
-        margin-top: 1.5rem;
-    }
+  .container {
+    margin-top: 1.5rem;
+  }
 
-    .heading > h2 {
-        font-size: 2rem;
-    }
+  .heading > h2 {
+    font-size: 2rem;
+  }
 
-    .projects {
-        flex-direction: column;
-    }
+  .projects {
+    flex-direction: column;
+  }
 }
 
 //Smartphones
 @media screen and (max-width: 500px) {
+  .container {
     .heading {
       margin-top: 0;
-      margin-bottom: 1.5rem; 
-    }
+      margin-bottom: 1.5rem;
 
-    .heading > h2 {
+      h2 {
         font-size: 1.5rem;
+      }
     }
 
     .work-page {
@@ -246,10 +246,10 @@ i {
       }
 
       .projects {
-         width: 80vw;
+        width: 80vw;
 
-         .project-card {
-          width: 100%; 
+        .project-card {
+          width: 100%;
         }
 
         h4 {
@@ -270,19 +270,22 @@ i {
     }
 
     .projects {
-        flex-direction: column; 
-    }
+      flex-direction: column;
 
-    .card {
+      .card {
         width: 15.9375rem;
-    }
 
-    .img > img {
-        width: 14.0625rem;
-        height: 14.0625rem;
-    }
+        .img {
+          img {
+            width: 14.0625rem;
+            height: 14.0625rem;
+          }
 
-    .img > a {
-        font-size: 1.875rem;
+          a {
+            font-size: 1.875rem;
+          }
+        }
+      }
     }
+  }
 }
